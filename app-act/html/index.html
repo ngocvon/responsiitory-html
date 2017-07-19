@@ -1,0 +1,445 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<title>ACT Online</title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" href="css/select_box.css" type="text/css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/jquery.easing.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {  
+	 popup_img2=new popups(".popup_form");
+	 setup();  
+	});
+</script>
+</head>
+<body>
+<div class="over">
+<div class="nav_logo">
+<a href="http://www.actconferencing.com/" title="ACT CONFERENCING" target="_blank"><img src="images/logo_act.png" alt="ACT CONFERENCING" class="img_logo"/></a>
+</div>
+<div class="page">
+<div class="page_popup" id="home">
+<h1>Which ACT product is right for you?</h1>
+<div class="shadow left">
+	<a href="javascript:click_page()" title="Let's find out" id="img_home"><img src="images/bt_home.png" alt="Let's find out" /></a>
+</div>
+<div class="rejsut left"><img src="images/img_banner_home.jpg" width="572" height="228"/ alt="home"></div>
+<div class="clear"></div>
+</div>
+<div class="page_popup" id="questionone">
+<div class="w_left left">
+	<h1>Do you need:</h1>
+</div>
+<div class="w_right left">
+	<ul class="ul_for_nav" id="question1">
+    	<li id="qs11">
+        	<div class="bg_li">
+                <div class="bg_li_left left bg_none"></div>
+                <div class="bg_li_mibble left bg_none"><p>Reserved meetings</p></div>
+                <div class="bg_li_right left bg_none"></div>
+                <div class="clear"></div>
+            </div>
+        </li>
+        <li id="qs12">
+            <div class="bg_li">
+                <div class="bg_li_left left bg_none"></div>
+                <div class="bg_li_mibble left bg_none"><p>On-demand meetings</p></div>
+                <div class="bg_li_right left bg_none"></div>
+                <div class="clear"></div>
+            </div>
+        </li>
+    </ul>
+    
+</div>
+<div class="clear"></div>
+<div class="bt_next">
+<a href="javascript:void()" title="Next" id="abc"><img src="images/bt_next.png" alt="Next" /></a>
+</div>
+</div>
+
+<div class="page_popup" id="questiontwo">
+<div class="w_left left">
+	<h1>Do your meetings <br />require:</h1>
+</div>
+<div class="w_right left">
+	<ul class="ul_for_nav" id="question2">
+    	<li id="qs21">
+        	<div class="bg_li">
+                <div class="bg_li_left left bg_none"></div>
+                <div class="bg_li_mibble left bg_none"><p>Interactive collaboration</p></div>
+                <div class="bg_li_right left bg_none"></div>
+                <div class="clear"></div>
+            </div>
+        </li>
+        <li id="qs22">
+            <div class="bg_li">
+                <div class="bg_li_left left bg_none"></div>
+                <div class="bg_li_mibble left bg_none"><p>One-to-many broadcast</p></div>
+                <div class="bg_li_right left bg_none"></div>
+                <div class="clear"></div>
+            </div>
+        </li>
+    </ul>
+    
+</div>
+<div class="clear"></div>
+<div class="bt_next">
+<a href="javascript:void()" title="Next" id="abc"><img src="images/bt_next.png" alt="Next" /></a>
+</div>
+</div>
+
+<div class="page_popup" id="questionthree">
+<div class="w_left left">
+	<h1>Do you want to 
+communicate by:</h1>
+</div>
+<div class="w_right left w_right_qs2">
+	<ul class="ul_for_nav" id="question3">
+        <li id="qs31">
+        	<div class="bg_li">
+                <div class="bg_li_left left bg_none"></div>
+                <div class="bg_li_mibble left bg_none"><p>Just audio</p></div>
+                <div class="bg_li_right left bg_none"></div>
+                <div class="clear"></div>
+            </div>
+        </li>
+         <li id="qs32">
+        	<div class="bg_li">
+                <div class="bg_li_left left bg_none"></div>
+                <div class="bg_li_mibble left bg_none"><p>Sharing content over the web</p></div>
+                <div class="bg_li_right left bg_none"></div>
+                <div class="clear"></div>
+            </div>
+        </li>
+         <li id="qs33">
+        	<div class="bg_li">
+                <div class="bg_li_left left bg_none"></div>
+                <div class="bg_li_mibble left bg_none"><p>Meeting face to face via video</p></div>
+                <div class="bg_li_right left bg_none"></div>
+                <div class="clear"></div>
+            </div>
+        </li>
+         <li id="qs34">
+        	<div class="bg_li">
+                <div class="bg_li_left left bg_none"></div>
+                <div class="bg_li_mibble left bg_none"><p>Broadcasting video</p></div>
+                <div class="bg_li_right left bg_none"></div>
+                <div class="clear"></div>
+            </div>
+        </li>
+        <li id="qs35">
+        	<div class="bg_li">
+                <div class="bg_li_left left bg_none"></div>
+                <div class="bg_li_mibble left bg_none"><p>Renting a video-enabled room</p></div>
+                <div class="bg_li_right left bg_none"></div>
+                <div class="clear"></div>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="clear"></div>
+<div class="bt_next">
+<a href="javascript:void()" title="Next" id="abc"><img src="images/bt_next.png" alt="Next" /></a>
+</div>
+
+</div>
+
+<div class="page_popup" id="questionfour">
+<div class="w_left left w_left_5">
+	<h1>How many <br />participants:</h1>
+</div>
+<div class="w_right left w_right_qs2">
+	<ul class="ul_for_nav" id="question4">
+        <li id="qs41">
+        	<div class="bg_li">
+                <div class="bg_li_left left bg_none"></div>
+                <div class="bg_li_mibble left bg_none"><p>Less than 20</p></div>
+                <div class="bg_li_right left bg_none"></div>
+                <div class="clear"></div>
+            </div>
+        </li>
+         <li id="qs42">
+        	<div class="bg_li">
+                <div class="bg_li_left left bg_none"></div>
+                <div class="bg_li_mibble left bg_none"><p>25 or less</p></div>
+                <div class="bg_li_right left bg_none"></div>
+                <div class="clear"></div>
+            </div>
+        </li>
+         <li id="qs43">
+        	<div class="bg_li">
+                <div class="bg_li_left left bg_none"></div>
+                <div class="bg_li_mibble left bg_none"><p>Up to 75</p></div>
+                <div class="bg_li_right left bg_none"></div>
+                <div class="clear"></div>
+            </div>
+        </li>
+         <li id="qs44">
+        	<div class="bg_li">
+                <div class="bg_li_left left bg_none"></div>
+                <div class="bg_li_mibble left bg_none"><p>Less than 150</p></div>
+                <div class="bg_li_right left bg_none"></div>
+                <div class="clear"></div>
+            </div>
+        </li>
+        <li id="qs45">
+        	<div class="bg_li">
+                <div class="bg_li_left left bg_none"></div>
+                <div class="bg_li_mibble left bg_none"><p>50 - 10,000</p></div>
+                <div class="bg_li_right left bg_none"></div>
+                <div class="clear"></div>
+            </div>
+        </li>
+        <li id="qs46">
+        	<div class="bg_li">
+                <div class="bg_li_left left bg_none"></div>
+                <div class="bg_li_mibble left bg_none"><p>1,000 +</p></div>
+                <div class="bg_li_right left bg_none"></div>
+                <div class="clear"></div>
+            </div>
+        </li>
+    </ul>
+    
+</div>
+<div class="clear"></div>
+	<div class="bt_next">
+	<a href="javascript:void()" title="Next" id="abc"><img src="images/bt_next.png" alt="Next" /></a>
+	</div>
+</div>
+
+<div class="page_popup" id="questionfive">
+<div class="w_left left w_left_5">
+	<h1>What size room?</h1>
+</div>
+<div class="w_right left w_right_qs2">
+    <ul class="ul_for_nav" id="question5">
+        <li id="qs51">
+            <div class="bg_li">
+                    <div class="bg_li_left left bg_none"></div>
+                    <div class="bg_li_mibble left bg_none"><p>Small</p></div>
+                    <div class="bg_li_right left bg_none"></div>
+                    <div class="clear"></div>
+            </div>
+        </li>
+        <li id="qs52">
+            <div class="bg_li">
+                    <div class="bg_li_left left bg_none"></div>
+                    <div class="bg_li_mibble left bg_none"><p>Small - Medium</p></div>
+                    <div class="bg_li_right left bg_none"></div>
+                    <div class="clear"></div>
+            </div>
+        </li>
+        <li id="qs53">
+            <div class="bg_li">
+                    <div class="bg_li_left left bg_none"></div>
+                    <div class="bg_li_mibble left bg_none"><p>Medium - Large</p></div>
+                    <div class="bg_li_right left bg_none"></div>
+                    <div class="clear"></div>
+            </div>
+        </li>
+    </ul>
+    
+</div>
+<div class="clear"></div>
+<div class="bt_next">
+<a href="javascript:void()" title="Next" id="abc"><img src="images/bt_next.png" alt="Next" /></a>
+</div>
+</div>
+
+<div class="page_popup" id="result">
+<div class="w_left left w_left_result">
+	<h1>RESULTS:</h1>
+	<div class="content_word">
+	<div class="video_conferenceCast">
+		<h3>Your company needs ConferenceCast</h3>
+		<div class="img_result left">
+		<a href="http://www.actconferencing.com/Resource-Center/Videos/ConferenceCast-Social-from-ACT-Conferencing/" title="video" target="_blank" id="video_conferenceCast"><img src="images/img_video.png" alt="video" /></a>
+		</div>
+		<div class="content_p left">    
+		<p class="video_conferenceCast">ConferenceCastwebinars and webcasts connectyou with thousands of participants. Our highly-experienced, professional web meeting coordinators and operators take care of the logistics so you can focus on delivering your important message. Ideal for important presentations like town hall meetings or investor calls, training sessions and product demonstrations. <span><a href="http://www.actconferencing.com/Services/TeemWeb/ConferenceCast-Services/" title="Read more" target="_blank">Read more</a></span></p>
+		</div>
+		<div class="clear"></div>
+	</div>
+    
+	<div class="video_eliteTeem">
+		<h3>Your company needs Elite </h3>
+		<div class="img_result left">
+		<a href="http://www.actconferencing.com/Resource-Center/videos/increasing-productivity-with-web-conferencing-features/" title="video" target="_blank" id="video_eliteTeem"><img src="images/img_video.png" alt="video" /></a>
+		</div>
+		<div class="content_p left">    
+		<p class="video_eliteTeem">Connect worldwide with ACT’s enhanced audio conferencing services for your high-touch audio events, big or small. Elite calls are designed for international conference calls or calls that require enhanced conferencing services and operator management. Ideal for high-profile, large-participant or international calls. <span><a href="http://www.actconferencing.com/Services/TeemAudio/Enhanced-Audio-Services/" title="Read more" target="_blank">Read more</a></span></p>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="video_ElitePasscode">
+		<h3>Your company needs Elite Passcode </h3>
+		<div class="img_result left">
+		 <a href="http://www.actconferencing.com/Resource-Center/videos/act-conferencing-global-bridge-linking/" title="video" target="_blank" id="video_ElitePasscode"><img src="images/img_video.png" alt="video" /></a>
+		</div>
+		<div class="content_p left">    
+		<p class="video_ElitePasscode">Flawlessly connect worldwide with ACT’s enhanced audio conferencing services for your high-touch audio events, big or small. Ideal for high-profile, large-participant or international calls.Perfect for calls that require enhanced conferencing services and operator management with a unique passcode. <span><a href="http://www.actconferencing.com/Services/TeemAudio/Enhanced-Audio-Services/" title="Read more" target="_blank">Read more</a></span></p>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="video_ElitePasscodePin">
+		<h3>Your company needs ElitePasscode + Pin</h3>
+		<div class="img_result left">
+		 <a href="http://www.actconferencing.com/Resource-Center/videos/act-conferencing-service-assurance/" title="video" target="_blank" id="video_ElitePasscodePin"><img src="images/img_video.png" alt="video" /></a>
+		</div>
+		<div class="content_p left">    
+		<p class="video_ElitePasscodePin">Flawlessly connect worldwide with ACT’s enhanced audio conferencing services for your high-touch audio events, big or small. Ideal for high-profile, large-participant calls.Great for international conference calls or calls that require enhanced conferencing servicesand added security. <span><a href="http://www.actconferencing.com/Services/TeemAudio/Enhanced-Audio-Services/" title="Read more" target="_blank">Read more</a></span></p>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="video_proximity">
+		<h3>Your company needs Proximity</h3>
+		<div class="img_result left">
+		  <a href="http://www.actconferencing.com/Resource-Center/videos/hosting-a-web-conference/" title="video" target="_blank" id="video_proximity"><img src="images/img_video.png" alt="video" /></a>
+		</div>
+		<div class="content_p left">    
+		<p class="video_proximity">With over 4,000 rooms, Proximity represents a large global network of conveniently-located video-enabled facilities.ACT Proximity excels at personal service, reliability and rapid problem solving. Focus on the conversation with hands-on reservation service and we'll take care of the logistics. <span><a href="http://www.actconferencing.com/Services/Proximity-Room-Rental/" title="Read more" target="_blank">Read more</a></span></p>
+		<p class="video_Forum">Hosted in the cloud, Forum is a powerful, on-demand service that lets you instantly engage with participants across multiple devices.Now you can collaborate from anywhere using the video app and device of your choice.Forum is video conferencing with all of the benefits.It’s easy-to use, widely interoperable,cost effective and secure. <span><a href="http://www.actconferencing.com/Services/TeemVideo/Forum-%28Virtual-Meeting-Room%29/" title="Read more" target="_blank">Read more</a></span></p>
+		<p class="video_ReservedHostedVideo">With ACT’s Hosted Video Conferencing, you can maximize internal resources by letting ACT manage the video bridging. Ideal if you already have a video system in place. We can host video conferences behind the scenes, connecting participants in multiple locations.<span><a href="http://www.actconferencing.com/Services/TeemVideo/Hosted-Meeting/" title="Read more" target="_blank">Read more</a></span></p>
+		<p class="video_teemMeeting">Delivered in the cloud, TeemMeeting leverages the best of audio, video and web conferencing. Ideal for collaboration, meetings and conference calls. TeemMeeting is a single conferencing solution for everyday meetings that doesn’t require resource-intensive IT support and costly deployment. <span><a href="http://www.actconferencing.com/Services/TeemMeeting/" title="Read more" target="_blank">Read more</a></span></p>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="video_Forum">
+		<h3>Your company needs Forum </h3>
+		<div class="img_result left">
+		   <a href="http://www.actconferencing.com/Resource-Center/Videos/Forum-from-ACT-Conferencing/" title="video" target="_blank" id="video_Forum"><img src="images/img_video.png" alt="video" /></a>
+		</div>
+		<div class="content_p left">    
+		<p class="video_Forum">Hosted in the cloud, Forum is a powerful, on-demand service that lets you instantly engage with participants across multiple devices.Now you can collaborate from anywhere using the video app and device of your choice.Forum is video conferencing with all of the benefits.It’s easy-to use, widely interoperable,cost effective and secure. <span><a href="http://www.actconferencing.com/Services/TeemVideo/Forum-%28Virtual-Meeting-Room%29/" title="Read more" target="_blank">Read more</a></span></p>
+		<p class="video_ReservedHostedVideo">With ACT’s Hosted Video Conferencing, you can maximize internal resources by letting ACT manage the video bridging. Ideal if you already have a video system in place.We can host video conferences behind the scenes, connecting participants in multiple locations.  <span><a href="http://www.actconferencing.com/Services/TeemVideo/Hosted-Meeting/" title="Read more" target="_blank">Read more</a></span></p>
+		<p class="video_teemMeeting">Delivered in the cloud, TeemMeeting leverages the best of audio, video and web conferencing. Ideal for collaboration, meetings and conference calls. TeemMeeting is a single conferencing solution for everyday meetings that doesn’t require resource-intensive IT support and costly deployment. <span><a href="http://www.actconferencing.com/Services/TeemMeeting/" title="Read more" target="_blank">Read more</a></span></p>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="video_ReservedHostedVideo">
+		<h3>Your company needs Reserved Hosted Video </h3>
+		<div class="img_result left">
+		   <a href="http://www.actconferencing.com/Resource-Center/videos/event-planning-multimedia-overview/" title="video" target="_blank" id="video_ReservedHostedVideo"><img src="images/img_video.png" alt="video" /></a>
+		</div>
+		<div class="content_p left">    
+		<p class="video_ReservedHostedVideo">With ACT’s Hosted Video Conferencing, you can maximize internal resources by letting ACT manage the video bridging. Ideal if you already have a video system in place.We can host video conferences behind the scenes, connecting participants in multiple locations.  <span><a href="http://www.actconferencing.com/Services/TeemVideo/Hosted-Meeting/" title="Read more" target="_blank">Read more</a></span></p>
+		<p class="video_teemMeeting">Delivered in the cloud, TeemMeeting leverages the best of audio, video and web conferencing. Ideal for collaboration, meetings and conference calls. TeemMeeting is a single conferencing solution for everyday meetings that doesn’t require resource-intensive IT support and costly deployment. <span><a href="http://www.actconferencing.com/Services/TeemMeeting/" title="Read more" target="_blank">Read more</a></span></p>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="video_teemMeeting">
+		<h3>Your company needs OnDemand Meeting</h3>
+		<div class="img_result left">
+		   <a href="http://www.actconferencing.com/Resource-Center/Videos/teem-from-act-conferencing/" title="video" target="_blank" id="video_teemMeeting"><img src="images/img_video.png" alt="video" /></a>
+		</div>
+		<div class="content_p left">    
+		<p class="video_teemMeeting">Delivered in the cloud, TeemMeeting leverages the best of audio, video and web conferencing. Ideal for collaboration, meetings and conference calls. TeemMeeting is a single conferencing solution for everyday meetings that doesn’t require resource-intensive IT support and costly deployment. <span><a href="http://www.actconferencing.com/Services/TeemMeeting/" title="Read more" target="_blank">Read more</a></span></p>
+		</div>
+		<div class="clear"></div>
+	</div> 
+	</div>
+</div>
+<div class="w_right left w_right_result">
+	<div class="bg_formmain">
+    	<h3>Contact ACT today for a free trial.</h3>
+        <div class="form_row">
+        	<div class="lable">
+            First Name<span>*</span>
+            </div>
+            <div class="bg_input"><input type="text" /></div>
+        </div>
+        <div class="form_row">
+        	<div class="lable">Last Name<span>*</span></div>
+            <div class="bg_input"><input type="text" /></div>
+        </div>
+        <div class="form_row">
+        	<div class="lable">Email<span>*</span></div>
+            <div class="bg_input"><input type="text" /></div>
+        </div>
+        <div class="form_row">
+        	<div class="lable">Company<span>*</span></div>
+            <div class="bg_input"><input type="text" /></div>
+        </div>
+        <div class="form_row">
+        	<div class="lable">Phone<span>*</span></div>
+            <div class="bg_input"><input type="text" /></div>
+        </div>
+        <div class="form_row">
+        <a href="#" title="submit"><img src="images/bt_submit.png" alt="submit" /></a>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+
+<div class="footer">
+	<div class="footer_line">
+    	<img src="images/line_page_1.png" height="37" width="830" alt="bar" class="line1" />
+    	<img src="images/line_page_2.png" height="37" width="830" alt="bar" class="line2"/>
+        <img src="images/line_page_3.png" height="37" width="830" alt="bar" class="line3" />
+    	<img src="images/line_page_4.png" height="37" width="830" alt="bar" class="line4"/>
+        <img src="images/line_page_5.png" height="37" width="830" alt="bar" class="line5"/>
+    	<img src="images/line_page_6.png" height="37" width="830" alt="bar" class="line6"/>
+        <img src="images/line_page_results.png" height="37" width="830" alt="bar" class="line7"/>
+    </div>
+    <ul class="ul_for_nav" id="footer_ul">
+    	<li class="active">
+        <a class="noactive" title="CONTACT ACT NOW" href="#"><img src="images/bt_singup_noactive.png" alt="CONTACT ACT NOW" /></a>
+        <a class="active" title="CONTACT ACT NOW" href="#"><img src="images/bt_sign.png" alt="CONTACT ACT NOW" /></a>
+        </li>
+        <li class="show_li"><a href="javascript:show_popup('#popup1')" title="EMAIL TO COLLEGUE"><img src="images/bt_email.png" alt="EMAIL TO COLLEGUE" /></a></li>
+        <li class="last">
+        	<ul class="ul_for_nav" id="nav">
+            	<p class="left">SHARE:</p>
+            	<li>
+               		 <a class="item1" href="http://www.facebook.com/pages/ACT-Conferencing/309410066338" title="facebook" target="_blank"></a>
+                </li>
+                <li>
+               		 <a class="item2" href="https://twitter.com/actconferencing" title="twitter" target="_blank"></a>
+                </li>
+                <li>
+               		 <a class="item3" href="http://www.linkedin.com/company/303798" title="linkeIn" target="_blank"></a>
+                </li>
+                <li>
+               		 <a class="item4" href="http://www.youtube.com/user/ACTconferencing" title="youtube" target="_blank"></a>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </li>
+    </ul>
+     <div class="clear"></div>
+</div>
+</div>
+<div class="popup_form" id='popup1'>
+         <div class="content_popup">
+            <div class="form_main">
+					<div class="form_main_popup">
+                        <div class="bg_lable left">
+						 <label>Email</label>
+						</div>
+						<div class="bg_input_p left">
+						<input type="text" />
+						</div>
+                        <div class="clear"></div>
+					</div>
+                   <a href="#" title="submit"><img src="images/bt_submit.png" alt="submit" /></a>
+                    
+         </div>
+         
+            <a href="javascript:close_popup()" title="close" class="close"><img src="images/close_icon.png" alt="close" /></a>
+        </div>
+	</div>
+</body>
+</html>
