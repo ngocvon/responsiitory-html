@@ -1,0 +1,331 @@
+<!doctype html>
+<html xmlns:ng="http://angularjs.org" id="ng-app" ng-app="MyNgApp">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="css/stylesheets/jquery.fancybox.css" media="screen"/>
+ <link href='http://fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css'/>
+    <title>McCromemeterCal</title>
+    <link rel="stylesheet" type="text/css" href="fonts/AvenirLTStd-Roman/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/AvenirLTStd-Heavy/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/AvenirLTStd-Black/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/AvenirLTStd-Medium/fonts.css" />
+    <link rel="stylesheet" href="css/stylesheets/screen.css" type="text/css"/>  
+</head>
+<body>
+    <div class="popup" ng-controller="Ctrl">
+        <div class="top">
+            <div class="logo">
+                <a href="http://www.mccrometer.com/" title="McCROMETER" target="_blank"><img src="images/logo.png" alt="McCROMETER"/></a>
+            </div>
+            <h1 class="left">Calculate Your Savings Instantly </h1>
+			<a href="http://e.mccrometer.com/FPI_RFQs?s=Cost_Calculator" target="_blank" title="REQUEST A QUOTE" class="aleft left"></a>
+            <div class="clear"></div>
+        </div>
+        <div class="content">
+            <p>
+                The FPI Mag Flow Meter can save you thousands over the total installed cost of a Full Bore Mag Flow Meter.
+                <br/>
+                <br/>
+                Adjust the values below to fit your project and see the cost difference immediately.
+            </p>
+            <div class="contentselectt">
+				<ul class="ul_for_nav">
+					<li>
+						<h4>Line Size in Inches</h4>
+						<div class="select_div">
+							<select  id="line" ng-model="lineList" ng-options="line as line.label for line in lines" ng-change='selectedlinesize(lineList.value)'>
+								<option value=""></option>
+							</select>
+							<p ng-model="kqp">{{kqp}}</p>
+						</div>
+					</li>
+					<li>
+						<h4>Labor Costs per Hour</h4>
+						<div class="select_div">
+							<select id="labor" ng-model="laborList" ng-options="labor as labor.label for labor in labors" ng-change='selectedlaborcosts(laborList.value)'>
+								<option value=""></option>
+							</select>
+						</div>
+					</li>
+					<li>
+						<h4>Water Prices per 1k Gallons</h4>
+						<div class="select_div">
+							<select id="gallon" ng-model="gallonList" ng-options="gallon as gallon.label for gallon in gallons" ng-change='selectedwater(gallonList.value)'></select>
+						</div>
+					</li>                
+				</ul>
+				<div class="clear"></div>
+			</div>
+			
+		<div>
+            <div class="left" ng-controller="Ctrlchar">
+                <h3 class="left">Installation Costs</h3>
+                <ul class="ul_for_nav left">
+                    <li class="one active">
+                        <a class="char" title="Chart" href="javascript:void(0)"></a>
+                        <span>Chart</span>
+                    </li>
+                    <li class="two">
+                        <a class="table" title="Table" href="javascript:void(0)"></a>
+                        <span class="spantable">Table</span>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+
+                <div class="costchart tablechar">
+                   <table cellspacing="0" cellpadding="0" border="1">
+                       <tr>
+                           <th></th>
+                           <th class="thfpi">
+                              <span>FPI Mag</span>
+                           </th>
+                           <th class="fullbore">
+                               <span>Full Bore</span>
+                           </th>
+                       </tr>
+                       <tr>
+                           <td>Cost of Meter</td>
+                           <td>
+                              <span class="CostFb" ng-model="costOfMeter">${{(costOfMeter| number:0)}}</span>
+                           </td>
+                           <td>
+                               <span ng-if="lineList.value>120" >Not Available</span>
+                               <span class="CostFu" ng-model="costFu" ng-if="lineList.value<126">${{(costFu | number:0)}}</span>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>Installation Labor</td>
+                           <td>
+                               <span class="InstallationFb" ng-model="InstallationFb">${{(InstallationFb| number:0)}}</span>
+                           </td>
+                           <td>
+                               <span ng-if="lineList.value>120" >Not Available</span>
+                               <span class="InstallationFu" ng-model="InstallationFu" ng-if="lineList.value<126">${{(InstallationFu| number:0)}}</span>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>Revenue Loss</td>
+                           <td>
+                               <span class="RevenueFb">$0</span>
+                           </td>
+                           <td>
+                               <span ng-if="lineList.value>120" >Not Available</span>
+                               <span class="RevenueFu" ng-model="RevenueFu" ng-if="lineList.value<126">${{(RevenueFu| number:0)}}</span>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>Additional Costs</td>
+                           <td>
+                               <span class="AdditionalFb">$800</span>
+                           </td>
+                           <td>
+                               <span ng-if="lineList.value>120" >Not Available</span>
+                                <span class="AdditionalFu" ng-model="AdditionalFu" ng-if="lineList.value<126">${{(AdditionalFu| number:0)}}</span>
+                           </td>
+                       </tr>
+
+                   </table>
+                </div>
+                <div class="graph">
+                <div class="costchart" id="container" style="min-width:200px; height:290px; margin: 0 auto"></div>
+                </div>
+                <ul class="vs ul_for_nav">
+                    <li class="one">{{lineList.label}} FPI Mag</li>
+                    <li class="two">VS</li>
+                    <li class="three">{{lineList.label}} Full Mag</li>
+                </ul>
+
+            </div>
+            <div class="right">
+                <p>you save = $<span class="result" ng-model="result">{{(result| number:0)}}</span></p>
+                <table cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td>
+                            <span></span>
+                        </td>
+                        <td class="one">
+                            <span>FPI Mag</span>
+                        </td>
+                        <td class="two">
+                            <span>Full Bore</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Total Cost
+                        </td>
+                        <td>
+                            <span class="costfpi" ng-model="costfpi">${{(costfpi| number:0)}}</span>
+                        </td>
+                        <td>
+                           <span class="costfull" ng-model="cost30Fbore" ng-if="lineList.value>120" >Not Available</span>
+                           <span class="costfull" ng-model="cost30Fbore" ng-if="lineList.value<126">${{(cost30Fbore| number:0)}}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Installation Time
+                        </td>
+                        <td>
+                                <span class="clock"></span>
+                                <span class="timefpi" ng-model="timefpi">{{timefpi}} Hours</span>
+                        </td>
+                        <td>
+                            <span ng-if="lineList.value>120">Not Available</span>
+                            <span ng-if="lineList.value<126">
+                                <span class="clock"></span>
+                                <span class="timefull" ng-model="timefull">{{timefull}} Hours</span>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Manpower
+                        </td>
+                        <td>
+                            <span class="Manpowerfpi" ng-if="lineList.fo==1">
+                                <img src="images/people.png" alt="Manpower1" class="manpower manpower_one"/>
+                            </span>
+                            <span class="Manpowerfpi" ng-model="lineList" ng-if="lineList.fo==2">
+                                <img src="images/people.png" alt="Manpower1" class="manpower manpower_one"/>
+                                <img src="images/people.png" alt="Manpower1" class="manpower manpower_two"/>
+                            </span>
+                            <span class="Manpowerfpi" ng-model="lineList" ng-if="lineList.fo==3">
+                                <img src="images/people.png" alt="Manpower1" class="manpower manpower_one"/>
+                                <img  src="images/people.png" alt="Manpower1" class="manpower manpower_two"/>
+                                <img  src="images/people.png" alt="Manpower1" class="manpower manpower_three"/>
+
+                            </span>
+                            <span class="Manpowerfpi" ng-model="lineList" ng-if="lineList.fo==4">
+                                <img  src="images/people.png" alt="Manpower1" class="manpower manpower_one"/>
+                                <img  src="images/people.png" alt="Manpower1" class="manpower manpower_two"/>
+                                <img  src="images/people.png" alt="Manpower1" class="manpower manpower_three"/>
+                                <img  src="images/people.png" alt="Manpower1" class="manpower manpower_four"/>
+                            </span>
+                        </td>
+                        <td>
+                            <span class="Manpowerfull" ng-if="lineList.fwi==3">
+                                <img src="images/people.png" alt="Manpower1" class="manpower manpower_one"/>
+                                <img  src="images/people.png" alt="Manpower1" class="manpower manpower_two"/>
+                                <img  src="images/people.png" alt="Manpower1" class="manpower manpower_three"/>
+                            </span>
+                            <span class="Manpowerfull" ng-model="lineList" ng-if="lineList.fwi==4">
+                                <img  src="images/people.png" alt="Manpower1" class="manpower manpower_one"/>
+                                <img  src="images/people.png" alt="Manpower1" class="manpower manpower_two"/>
+                                <img  src="images/people.png" alt="Manpower1" class="manpower manpower_three"/>
+                                <img  src="images/people.png" alt="Manpower1" class="manpower manpower_four"/>
+                            </span>
+                            <span class="Manpowerfull"  ng-if="lineList.fwi==5">
+                                <img  src="images/people.png" alt="Manpower1" class="manpower manpower_one"/>
+                                <span class="xpeople">X 5</span>
+                            </span>
+                            <span class="Manpowerfull"  ng-if="lineList.fwi==6">
+                                <img  src="images/people.png" alt="Manpower1" class="manpower manpower_one"/>
+                                <span class="xpeople">X 6</span>
+                            </span>
+                            <span class="Manpowerfull"  ng-if="lineList.fwi==0">
+                               Not Available
+                            </span>
+                        </td>
+                    </tr>
+                    <tr class="style15">
+                        <td>
+                            Water Loss
+                        </td>
+                        <td>
+                            <span ng-if="lineList.value>120" class="Waterfpi">Not Available</span>
+                            <span ng-if="lineList.value<126" class="Waterfpi">0 MGal</span>
+                        </td>
+                        <td>
+                            <span ng-if="lineList.value>120">Not Available</span>
+                            <span ng-if="lineList.value<126"><span class="Waterfull" ng-model="Waterfull">{{(Waterfull)}} MGal</span></span>
+                        </td>
+                    </tr>
+                    <tr class="style15">
+                        <td>
+                            Revenue Loss
+                        </td>
+                        <td>
+                            <span class="Revenuefpi">$0</span>
+                        </td>
+                        <td>
+                            <span ng-if="lineList.value>120" >Not Available</span>
+                            <span ng-if="lineList.value<126"><span class="Revenuefull" ng-model="Revenuefull">${{(Revenuefull| number:0)}}</span></span>
+                        </td>
+                    </tr>
+                </table>
+            </div>			
+            <div class="clear"></div>
+		</div>
+			<p class="pleft">This cost calculator is for illustrative purposes and may not represent the exact costs for every installation. It is based on the installation of a new meter into existing piping. Actual savings may be more or less and will depend on the specific application. For most accurate comparison, you may request a quote from McCrometer.</p>
+        
+        </div>
+		
+        <div class="close">
+			<a href="javascript:void(0)" title="" onclick="javascript:parent.jQuery.fancybox.close();">
+				<img src="images/close_icon.png" alt="Close" />
+			</a>
+		</div>
+        <div class="formcontactus">
+            <p>Contact Preference</p>
+            <form action="post" onsubmit="return contactMail.processFormContact()" id="contact_form">
+                <div class="checkbox">
+                    <div class="left">
+                        <input type="checkbox" id="freequote"/>
+                    </div>
+                    <label class="left" for="freequote">Free Quote</label>
+                    <div class="clear"></div>
+                </div>
+                <div class="checkbox">
+                    <div class="left">
+                        <input type="checkbox"  id="needmore"/>
+                    </div>
+                    <label class="left" for="needmore">I Need More Information</label>
+                    <div class="clear"></div>
+                </div>
+                <div class="checkbox">
+                    <div class="left">
+                        <input type="checkbox"  id="singmeup"/>
+                    </div>
+                    <label class="left" for="singmeup">Sign Me Up for Email Updates</label>
+                    <div class="clear"></div>
+                </div>
+                <div class="rowinput">
+                    <label>Name*</label>
+                    <input type="text" id="name"/>
+                </div>
+                <div class="rowinput">
+                    <label>E-mail*</label>
+                    <input type="text" placeholder="ex: myname@example.com" id="email"/>
+                </div>
+                <div class="rowinput">
+                    <label>Phone Number</label>
+                    <input type="text" id="phone"/>
+                </div>
+                <div class="rowinput">
+                    <label>Postal Code</label>
+                    <input type="text" id="posttalcode"/>
+                </div>
+                <a href="#" title="Submit" class="bg_gradient" onclick="contactMail.submitContact();"></a>
+				<span class="loading_img_contact"><img src="images/preloader.gif" alt="preloader"/></span>
+            </form>
+        </div>
+        <div class="thankyou">
+            <p>Thank you for contacting McCrometer. An associate will contact you within one business day.</p>
+            <a href="#" title="OK" class="okthankyou" onclick="close_dropprofile();"></a>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="js/angular.min.js" type="text/javascript"></script>
+	<script src="js/jquery.easing.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+    <script src="jschart/highcharts.js" type="text/javascript"></script>
+    <script src="jschart/modules/exporting.js" type="text/javascript"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/numeral.js/1.4.5/numeral.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/commons.js"></script> 	
+</body>
+</html>
