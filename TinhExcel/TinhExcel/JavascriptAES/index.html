@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<title>Untitled Document</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="row">
+        <label>Product</label>
+        <select class="product">
+            <option index="1">Very High Precision DSM</option>
+            <option index="2">Precision DSM</option>
+            <option index="3">Mapping DSM</option>
+            <option index="4">Very High Precision DTM</option>
+            <option index="5">Precision DTM</option>
+            <option index="6">Mapping DTM</option>
+        </select>
+        <span class="product_resuts">Resuts:</span>
+    </div>
+    <div class="row">
+        <label>Area (km2)</label>
+        <input type="text" class="area_input"/>
+        <span class="area_resuts">Resuts:</span>
+    </div>
+    <div class="row">
+        <p>Optional Products</p>
+        <div class="rowcheckbox_products">
+            <label>Hydro Enforced</label>
+            <input type="checkbox" class="hydro_products"/>
+            <span class="option_productresuts1">Resuts:</span>
+        </div>
+        <div class="rowcheckbox_products">
+            <label>Road Flattening</label>
+            <input type="checkbox" class="road_flattening" />
+            <span class="option_productresuts2">Resuts:</span>
+        </div>
+        <div class="rowcheckbox_products">
+            <label>Shaded Relief</label>
+            <input type="checkbox" class="shaded_flattening" />
+            <span class="option_productresuts3">Resuts:</span>
+        </div>
+        <div class="rowcheckbox_products">
+            <label>Secure Processing</label>
+            <input type="checkbox" class="secure_processing" />
+            <span class="option_productresuts4">Resuts:</span>
+        </div>
+        <div class="rowcheckbox_products">
+            <label>Custom GCP's</label>
+            <input type="checkbox" class="custom_gcps" />
+            <span class="option_productresuts5">Resuts:</span>
+        </div>
+    </div>
+	<div class="row">
+    	<label>Contours</label>
+        <select class="contours">
+        	<option index="1">Very High Precision</option>
+            <option index="2">Precision</option>
+            <option index="3">Mapping</option>
+        </select>
+        <span class="contours">Resuts:</span>
+    </div>
+    <div class="row">
+    	<label>Licenses</label>
+        <select class="licenses">
+        	<option index="1">Base: Up to 5 users</option>
+            <option index="2">Group: 6 - 10 users</option>
+            <option index="3">Enterprise: 11-25 users</option>
+            <option index="4">Enterprise Premium: 26+ users</option>
+            <option index="5">Educational</option>
+        </select>
+        <span class="licenses">Resuts:</span>
+    </div>
+    <div class="row"><span class="e16">E16:</span></div>
+    <div class="row">
+        <p>Additional Delivery Options & Terms</p>
+        <div class="rowcheckbox_products">
+            <label>Copy/Reprocess</label>
+            <input type="checkbox" />
+            <span>Resuts:</span>
+        </div>
+        <div class="rowcheckbox_products">
+            <label>Duplicate Media (DVD)</label>
+            <input type="checkbox" />
+            <span>Resuts:</span>
+        </div>
+        <div class="rowcheckbox_products">
+            <label>Hard Drive</label>
+            <input type="checkbox" />
+            <span>Resuts:</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

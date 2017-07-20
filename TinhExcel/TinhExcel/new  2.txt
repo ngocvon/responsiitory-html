@@ -1,0 +1,13 @@
+Resut==IF(E16,"Call for quote",SUM(F18:F21)-F25)
+E16==IF(COUNTIF(E8:E15,TRUE),TRUE,FALSE)
+F18==(F5+SUM(F8:F14)*B5)*(1+F15)
+F19=IF(D19,IF('AES Calculator'!F18*'MySQL Lookup Tables'!B43<'MySQL Lookup Tables'!C43,'AES Calculator'!F18*'MySQL Lookup Tables'!B43,'MySQL Lookup Tables'!C43),0)
+F20==IF(D20,'MySQL Lookup Tables'!C44,0)
+F21==IF(D21,'MySQL Lookup Tables'!C45,0)
+E16={E8=IF(D8,'MySQL Lookup Tables'!B18,0)}
+
+F18={
+F5==B5*E3
+E3==IF(E4,OFFSET('MySQL Lookup Tables'!D2,'AES Calculator'!D3,0),OFFSET('MySQL Lookup Tables'!C2,'AES Calculator'!D3,0))
+F15==OFFSET('MySQL Lookup Tables'!B33,'AES Calculator'!D15,0)
+}

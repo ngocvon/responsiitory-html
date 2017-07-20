@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+/*style together*/
+
+body{ margin:0px; padding:0px; font-family:Arial, Helvetica, sans-serif; position:relative; background:#fdfcfa;}
+*{ zoom:1;-webkit-text-size-adjust:100%;font-weight:normal}
+*:focus{ outline:none; outline:0;}
+.right{ float:right;}
+.left{ float:left;}
+.last{margin-right:0px;padding-right:0px;}
+.first{margin-left:0px;padding-left:0px;}
+.clear{ clear:both; line-height:0px; font-size:0px;content:"";}
+img{ border:none;}
+ul.ul_for_nav{ margin:0px; padding:0px;}
+ul.ul_for_nav li{ list-style:none}
+a{ text-decoration:none; color:#ef479d;}
+h1,h2,h3,h4,h5,h6,ul,ol,p{ margin:0px;}
+/**/
+.wrapper{width:500px;margin:0 auto;padding-top:20px;}
+.row{margin-bottom:20px;}
+.row p{font-weight:bold;color:#000}
+.rowcheckbox_products{margin-bottom:5px;}
