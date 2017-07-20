@@ -1,0 +1,36 @@
+.block-layered-nav{
+
+	margin-bottom:24px;
+	font-size:12px;
+	line-height:20px;
+	color:$color-p;
+	font-weight:normal;
+
+	.block-content{
+		padding:20px;
+	}
+	.block-subtitle{
+		padding-bottom:15px;
+		font-weight:bold;
+		font-size:inherit;
+	}
+	.odd{
+		padding-bottom:7px;
+		font-weight:bold;
+		font-size:inherit;
+	}
+	ul{
+		padding-bottom:17px;
+		margin-left:5px;
+		li{
+			min-height:20px;
+			padding:5px 0px;
+			position:relative;
+			a{
+				.fa{
+					padding-right:8px;
+				}
+			}
+		}
+	}
+}

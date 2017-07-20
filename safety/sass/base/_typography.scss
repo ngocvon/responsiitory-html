@@ -1,0 +1,154 @@
+//.text-left,text-center,text-right,justify,nowrap,lowercase,uppercase,capitalize
+
+small,.small{
+  font-size:10px;
+}
+mark,.mark{
+  background:#ff0;
+  // background cua text
+}
+
+b, strong,em {
+  font-weight: 700;
+}
+
+a{
+  outline: 0;
+  color: $color-a;
+  text-decoration: none;
+  @include transition-y();
+  line-height:28px;
+  &:hover{
+    color:$color-a-hover;
+    text-decoration:none;
+  }
+}
+
+a:focus, a:hover, a:active{
+  text-decoration:none;
+  color:$color-a-hover;
+}
+
+h1,.h1{
+    img{
+      padding-left:10px;
+      padding-right:10px;
+    }
+    span{
+      font-size:30px;
+    }
+}
+
+h2,.h2{
+    img{
+      padding-left:10px;
+      padding-right:10px;
+    }
+    span{
+      font-size:42px;
+    }
+}
+
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5{
+  text-transform: uppercase;
+      font-weight:700;
+}
+
+h1,h2,h3,h4,h5{
+  margin:0px;
+  padding:0px 0 20px;
+}
+
+
+h1,.h1{
+  @include styleText(48px,44px,$color-red);
+  padding-bottom:10px;
+}
+h2,.h2{
+  @include styleText(28px,38px,$color-h);
+}
+h3,.h3{
+  @include styleText(21px,28px,$color-h);
+}
+h4,.h4{
+  @include styleText(16px,28px,$color-h);
+}
+h5,.h5{
+  @include styleText(16px,28px,$color-h);
+}
+p,.p{
+  @include styleText(16px,28px,$color-p);
+  padding-bottom:20px;
+  margin-bottom:0px;
+  font-weight:normal;
+}
+dd{
+  @include styleText(16px,28px,$color-p);
+  padding-bottom:20px;
+  margin-bottom:0px;
+  font-weight:normal;
+}
+dt{
+  @include styleText(18px,28px,$color-p);
+  padding-bottom:20px;
+  margin-bottom:0px;
+  font-weight:normal;
+}
+ul,ol {
+   margin:0px;
+   padding-bottom:24px;
+}
+
+
+ol{
+  margin-left:20px;
+}
+
+.col-main{
+  ul{
+    li{
+      @include setbackground("bg-ul-li.png", no-repeat 0px 14px);
+      list-style-type: none;
+      @include styleText(16px,28px,$color-p);
+    }
+  }
+  a{
+    font-size:16px;
+  }
+}
+
+table{
+    width:auto;
+    margin: 0 auto;
+    tr{
+      td,th{
+        padding:5px;
+          p,ul li,ol li{
+            width:auto;
+            padding: 0px;
+            margin: 0px;
+            width:100%;
+          }
+      }
+    }
+    tr th{
+      @include styleText(18px,24px,#fff);
+      font-weight:700;
+    }
+    tr td{
+      font-size:25px;
+      font-weight:700;
+      h4{
+        font-size:24px;
+      }
+      h3,h4,h2{
+        padding-bottom:0px;
+        color:#750a3f;
+      }
+    }
+   
+}
+
+img{
+  max-width:100%;
+}

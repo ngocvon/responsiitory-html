@@ -1,0 +1,57 @@
+.flexslider-thumb{
+
+	li { 
+	    margin: 0 4px;
+	    text-align:left;
+	    a{
+	    	img{
+	    		vertical-align: middle;
+	    	}
+	    }
+	}
+
+	
+
+	.owl-pagination{
+		display:none;
+	}
+
+	.owl-prev, .owl-next {
+	    cursor: pointer;
+	    height: 28px;
+	    opacity:1;
+	    filter: Alpha(Opacity=100);
+	    position: absolute;
+	    width: 30px;
+	    z-index: 100;
+	    top:25%;
+	    background: url(#{$img-url}images/Safety-site-sprites-category.png);
+	}
+
+	.owl-prev{
+		
+		background-position: -71px -40px;
+	    display: block;
+	    left:-7px;
+	    transition: all 0s ease 0s;
+	}
+
+	.owl-prev:hover{
+		background-position:-71px -71px;
+	}
+
+	.owl-next{
+		background-position:-101px -40px;
+	    display: block;
+	    right:-7px;
+	    transition: all 0s ease 0s;
+	}
+
+	.owl-next:hover{
+		background-position:-101px -71px;
+	}
+	.owl-theme .owl-controls .owl-buttons div{
+		opacity:1;
+	    filter: alpha(Opacity=100);
+	}
+}

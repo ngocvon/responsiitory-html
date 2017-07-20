@@ -1,0 +1,21 @@
+.block-color{
+	.panel-body{
+		padding-right:0px;
+
+		ol{
+			li{
+				float:left;
+				margin:1px 0px;
+				min-width:68px;
+				a{	
+					span{
+						display:block;
+						width:42px;
+						height:42px;
+					}
+				}
+
+			}
+		}
+	}	
+}

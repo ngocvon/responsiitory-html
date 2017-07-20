@@ -1,0 +1,16 @@
+.logo{
+	
+	width:304px;
+	height:126px;
+	display:block;
+	text-align:center;
+	background:#fff;
+	span{
+		background:url(#{$img-url}images/Icon-all.png) no-repeat;
+		background-position:-183px -415px;
+		width: 243px;
+		height:126px;
+		display:inline-block;
+	}
+	img{padding-top:26px;}
+}

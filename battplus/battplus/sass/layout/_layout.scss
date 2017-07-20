@@ -1,0 +1,23 @@
+
+.skip-link {background:none;}
+.search-autocomplete::before {border:none;}
+.header-language-background {background:none;}
+.header-language-background a {color: #fff}
+.cloudzoom-lens:hover > div{display:none !important;}
+
+@media (max-width:480px){
+
+	.container, .container-fluid{
+		margin:0 auto;
+	}
+	.footer_middle_section{
+		.container{
+			padding-left:0px;
+			padding-right:0px;
+			margin-left:0px;
+			margin-right:0px;
+		}
+		
+	}
+
+}

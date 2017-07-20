@@ -1,0 +1,28 @@
+.header{
+	position:relative;
+	.content-banner{
+		position:absolute;
+		bottom:45px;left:0px;width:100%;z-index:9999;
+		.container{text-align:center;}
+		h1,h2,h3{
+			font-weight:700;
+			text-transform:uppercase;
+			color:#fff;
+		}
+		h1{
+			font-size:60px;
+			line-height:66px;
+			font-weight:900;
+			margin-bottom:5px;
+		}
+		h2{
+			font-size:30px;
+			line-height:40px;
+			padding-bottom:27px;
+		}
+		h3{
+			font-size:20px;
+			line-height:30px;
+		}
+	}
+}

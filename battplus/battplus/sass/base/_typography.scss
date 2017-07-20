@@ -1,0 +1,136 @@
+//.text-left,text-center,text-right,justify,nowrap,lowercase,uppercase,capitalize
+
+small,.small{
+  font-size:10px;
+}
+mark,.mark{
+  background:#ff0;
+  // background cua text
+}
+
+b, strong,em {
+  font-weight: 700;
+}
+i{
+    font-style:italic;
+}
+
+a{
+  outline: 0;
+  color: $color-a;
+  text-decoration: none;
+  //@include transition-y();
+  line-height:28px;
+  &:hover{
+    color:$color-a-hover;
+    text-decoration:none;
+  }
+}
+
+a:focus, a:hover, a:active{
+  text-decoration:none;
+  color:$color-a-hover;
+}
+
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5{
+  text-transform: uppercase;
+}
+
+h1,h2,h3,h4,h5{
+  margin:0px;
+  padding:0px 0 16px;
+}
+
+h1,.h1{
+  @include styleText(40px,50px,$color-h);
+  padding-bottom:10px;
+  font-weight:600;
+}
+h2,.h2{
+  @include styleText(35px,45px,$color-h);
+}
+h3,.h3{
+  @include styleText(30px,40px,$color-h);
+}
+h4,.h4{
+  @include styleText(25px,35px,$color-h);
+}
+h5,.h5{
+  @include styleText(18px,30px,$color-h);
+}
+p,.p{
+  @include styleText(18px,28px,$color-p);
+  padding-bottom:26px;
+  margin-bottom:0px;
+  font-weight:400;
+}
+dd{
+  @include styleText(16px,28px,$color-p);
+  padding-bottom:20px;
+  margin-bottom:0px;
+}
+dt{
+  @include styleText(18px,28px,$color-p);
+  padding-bottom:20px;
+  margin-bottom:0px;
+}
+ul,ol {
+   margin:0px;
+   padding-bottom:24px;
+}
+ul li{
+    padding-bottom:20px;
+}
+ol li{
+    padding-bottom:20px;
+}
+ol{
+  margin-left:20px;
+}
+
+.col-main{
+  ul{
+    li{
+      @include setbackground("bg-ul-li.png", no-repeat 0px 14px);
+      list-style-type: none;
+      @include styleText(16px,28px,$color-p);
+    }
+  }
+  a{
+    font-size:16px;
+  }
+}
+
+table{
+    width:auto;
+    margin: 0 auto;
+    tr{
+      td,th{
+        padding:5px;
+          p,ul li,ol li{
+            width:auto;
+            padding: 0px;
+            margin: 0px;
+            width:100%;
+          }
+      }
+    }
+    tr th{
+      @include styleText(18px,24px,#fff);
+    }
+    tr td{
+      font-size:25px;
+      h4{
+        font-size:24px;
+      }
+      h3,h4,h2{
+        padding-bottom:0px;
+        color:#750a3f;
+      }
+    }
+   
+}
+
+img{
+  max-width:100%;
+}

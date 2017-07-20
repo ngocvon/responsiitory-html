@@ -1,0 +1,286 @@
+
+.share{
+
+	a{
+		border:1px solid #fff;
+		border-radius: 20px;
+		color: #fff;
+		height: 40px;
+		line-height:40px;
+		width: 40px;
+		display: inline-block;
+		padding: 0;
+		text-align: center;
+		margin-left:6px;
+	}
+
+    a.facebook{
+    	margin-left:0px;
+	  &:hover{
+	  	color: #fff;
+	  	background:#4972bc;
+	  	border:1px solid #4972bc;
+	  }
+
+	}
+	a.twitter{
+	  &:hover{
+	  	color: #fff;
+	  	background:#42a5d4;
+	  	border:1px solid #42a5d4;
+	  }
+	}
+	a.googleplus{
+	  &:hover{
+	  	color: #fff;
+	  	background:#c9332d;
+	  	border:1px solid #c9332d;
+	  }
+	}
+	a.youtube{
+
+	  &:hover{
+	  	color: #fff;
+	  	background:#e83b02;
+	  	border:1px solid #e83b02;
+	  }
+	   
+	}
+	a.pinterest{
+		
+		&:hover{
+		  	color: #fff;
+		  	background:#b21d22;
+		  	border:1px solid #b21d22;
+	  	}
+	}
+
+}
+
+.share-top {
+	a{
+		border-radius:19px;
+		height: 38px;
+		line-height:38px;
+		width: 38px;
+		font-size: 18px;
+	}
+	.fa{
+		font-size:20px;
+		line-height:38px;
+	}
+}
+
+.share-footer {
+	a{
+		border-radius:25px;
+		height: 50px;
+		line-height:50px;
+		width: 50px;
+		font-size: 22px;
+	}
+	.fa{
+		font-size:24px;
+		line-height:50px;
+	}
+
+
+}
+
+.share-product-view {
+	a{
+
+		border-radius:4px;
+		height: 35px;
+		line-height:35px;
+		width: 35px;
+		font-size: 16px;
+		display:inline-block;
+		text-align:center;
+		margin-left:12px;
+	}
+	.fa{
+		font-size:16px;
+		line-height:35px;
+		color:#fff;
+	}
+	a.facebook{
+    	margin-left:0px;
+    	background:#4972bc;
+	  &:hover{
+	  	background:#4972bc*1.2;
+	  }
+	}
+	a.twitter{
+		background:#42a5d4;
+	  &:hover{
+	  	background:#42a5d4*1.2;
+	  }
+	}
+
+	a.pinterest{
+		background:#b21d22;
+		&:hover{
+		  	background:#b21d22*1.2;
+	  	}
+	}
+}
+
+.payment_links{
+
+	a{
+		background: transparent url("../images/Safety-site-sprites.png");
+		display:inline-block;
+		font-size: 0;
+		height:28px;
+		margin-left:5px;
+		width:40px;
+		opacity:1;
+		filter:alpha(opacity=100);
+		 &:hover{
+		   	opacity:0.7;
+			filter:alpha(opacity=70);
+	   	}
+	}
+	a.world-pay{
+		background-position:0px -455px;
+		width:118px;
+	}
+	a.visa{
+		background-position:-123px -455px;
+		width:43px;
+	}
+	a.a{
+		background-position:-170px -455px;
+	}
+	a.cre{
+		background-position:-216px -455px;
+		width:41px;
+	}
+	a.paypal{
+		background-position:-262px -455px;
+	}
+	a.apple{
+		background-position:-308px -455px;
+	}
+
+}
+
+.addthis-smartlayers{
+
+	position:fixed;
+	right:0px;
+	top:50px;
+	z-index:999;
+}
+
+.addthis-animated{
+
+	p{
+		margin-bottom:5px;
+		padding:0px;
+		@include transition-y();
+		&:hover{
+	   		transform:translateX(-5px);
+	   }
+	}
+
+	a{
+		background: transparent url("../images/Safety-site-sprites.png");
+		display: block;
+		font-size: 0;
+		float:right;
+		@include transition-none();
+		height: 49px;
+		width: 44px;
+	}
+
+	
+	.facebook{
+		a{
+			background-position: 0 -117px;
+		}
+		&:hover{
+			a{
+				background-position:-45px -117px;
+		   		width: 46px;
+			}	
+	   }
+	}
+
+	.twitter{
+		a{
+			background-position: 0 -165px;
+		}
+		&:hover{
+			a{
+				background-position:-45px -165px;
+		   		width: 46px;
+			}	
+	   }
+	}
+
+	.googleplus{
+
+		a{
+			background-position: 0 -213px;
+		}
+		&:hover{
+			a{
+				background-position:-45px -213px;
+		   		width: 46px;
+			}	
+	   }
+	}
+
+	.youtube{
+		a{
+			background-position: 0 -261px;
+		}
+		&:hover{
+			a{
+				background-position:-45px -261px;
+		   		width: 46px;
+			}	
+	   }
+	}
+
+	.pinterest{
+		a{
+			background-position: 0 -309px;
+		}
+		&:hover{
+			a{
+				background-position:-45px -309px;
+		   		width: 46px;
+			}	
+	   }
+	}
+}
+
+
+@media screen and (max-width: 1400px){
+
+	.share-top a{
+		margin-left: 7px;
+	}
+	.share-top {
+
+		a{
+			margin-left: 7px;
+		}
+
+	}
+}
+
+@media screen and(max-width:990px){
+	.addthis-smartlayers{
+		display:none;
+	}
+}
+
+@media screen and(max-width:420px){
+	.payment_links a{
+		margin-bottom:10px;
+	}
+}

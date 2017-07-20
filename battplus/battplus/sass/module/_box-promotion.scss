@@ -1,0 +1,37 @@
+.box-promotion{
+	padding-bottom:95px;
+	.product-view{padding-top:76px;padding-bottom:0px;}
+	.block-promotion-top{
+		padding-top:60px;
+		padding-bottom:53px;
+		background:#F4F4F4;
+		border-bottom: 1px solid #CCC;
+		position:relative;
+		.narrow-promotion-bottom {
+		    position: absolute;
+		    bottom: -16px;
+		    left: 50%;
+		    margin-left: -10px;
+		}
+		p{
+			font-size:20px;
+			line-height:26px;
+		}
+		.col-content{
+			width:72%;
+		}
+		.col-icon{width:28%;}
+	}
+	.special-price{
+		color:$color-a;
+	}
+	.product-view h2{padding-bottom: 22px;}
+	.product-view .number.price{
+		font-size: 35px;padding-bottom: 22px;
+	}
+	.buyer-tip{font-size:24px;font-weight:500;text-transform:uppercase;padding-bottom:2px;color:$color-p;}
+	.action.row{margin-bottom:22px;border-top:0px;padding-top:0px;}
+	.product-info p{font-size:22px;line-height:32px;padding-bottom:14px;}
+	.product-info i{font-size:20px;line-height:26px;}
+
+}

@@ -1,0 +1,420 @@
+.sale{
+    background:url(#{$img-url}images/Icon-all.png) no-repeat;
+    width:109px;
+    height:43px;
+    background-position:-452px -410px;
+    position:absolute;
+    top:30px;
+    left:9px;
+}
+.batteries-quot{
+     font-size:36px;
+     line-height:40px;
+     text-align:center;
+    font-weight: 300;
+    font-style: italic;
+}
+.box-pull-video{
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+    border: 15px solid #000;
+    position: relative;
+}
+.content-video{position: relative;}
+.mediaPlayer{
+    position:absolute;
+    top:50%;
+    left:50%;
+    background:url(#{$img-url}images/Icon-all.png) no-repeat;
+    width:142px;
+    height:142px;
+    background-position:-10px -399px;
+    margin-left: -71px;
+    margin-top: -71px;
+}
+.number{
+    font-family:$font-family-number;
+   
+}
+.article-reason{
+    background:#f7f8f9;
+    padding-top:83px;
+    padding-bottom:57px;
+    .batteries-quot{
+        font-size:36px;
+        font-style:italic;
+        padding-bottom:22px;
+    }
+    P{
+        font-size:18px;
+        line-height:22px;
+        padding-bottom:18px;
+    }
+    ol{
+        list-style-type: none;
+        margin-left:0px;
+        counter-reset: item;
+        margin-left:16px;
+        margin-top: 12px;
+    }
+    ol li:before { 
+        content: counter(item) "  "; 
+        counter-increment: item;
+        padding-right:7px;
+    }
+    ol li{
+        font-size:18px;
+        line-height:22px;
+        padding-bottom:10px;
+        font-weight:500;
+    }
+    h2{
+        font-size:48px;
+        line-height:59px;
+        padding-bottom:23px;
+        color:$color-green;
+        text-align:center;
+        font-family: 'Conv_Raleway-Bold';
+    }
+    .batteries-council{
+        font-size:21px;
+         text-align:center;
+         font-family: 'Conv_Raleway-Bold';
+         text-transform:capitalize;
+    }
+    .img-reason{
+        position:absolute;
+        top:26px;left:-82px;
+    }
+    .box-content{position:relative;}
+    .col-content{
+        width:61%;
+        padding-left:37px;
+        padding-top: 77px;
+        p{
+            font-weight:500;
+        }
+    }
+}
+
+.article-desulfators{
+    background:url(#{$img-url}images/Banner4.jpg ) no-repeat top center;
+    padding-bottom:58px;
+    padding-top:72px;
+    h2{
+        font-size:48px;
+        line-height:55px;
+        color:#fff;
+        text-align:center;
+        font-weight:700;
+        padding-bottom:18px;
+    }
+    .batteries-quot{
+         color:#fff;
+         width:554px;
+         margin:0 auto;
+         margin-bottom:50px;
+         font-weight:400i;
+    }
+    ul.row{
+        margin-left:-20px;
+        margin-right:-20px;
+        margin-bottom:0px;
+        padding-bottom:0px;
+    }
+    ul li{
+        width:50%;
+        float:left;
+        margin-bottom:43px;
+        padding-left:20px;
+        padding-right:20px;
+        h3{
+            font-size:36px;
+            line-height:40px;
+            color:#fff;
+            text-transform:none;
+        }
+        p{
+            color:#fff;
+            font-size:18px;
+            line-height:22px;
+            margin-top:24px;
+            padding-bottom:0px;
+        }
+        span{
+            display:inline-block;
+            margin-top:-18px;
+            float:left;
+            margin-right:31px;
+            width:122px;
+            height:122px;
+            background:url(#{$img-url}images/Icon-all.png) no-repeat;
+           
+        }
+        .triple{background-position:-13px -15px;}
+        .money{background-position:-138px -15px;}
+        .earth{ background-position:-262px -15px;}
+        .optimizes{ background-position:-387px -15px;}
+        .revives{ background-position:-510px -15px;}
+        .lowers{ background-position:-634px -15px;}
+        &:last-child{
+            margin-bottom:0px;
+        }
+    }
+}
+
+.silder-satisfied{
+
+    background:url(#{$img-url}images/JOIN-THE-MYRIAD-BG.png) no-repeat top center;
+    background-color:#f4f4f4;
+    padding-top:60px;
+    padding-bottom:20px;
+    height:540px;
+    .owl-carousel .owl-wrapper-outer {
+        margin: 0 auto;
+        width: 86%;
+    }
+    .item{
+       max-width: 1008px;
+        text-align: center;
+    }
+    p{
+        font-size:18px;
+        line-height:24px;
+        margin: 0 auto;
+        width: 74%;
+        font-style:italic;
+        padding-bottom:31px;
+    }
+    h2{
+        font-size:48px;
+        color:#3399cc;
+        line-height:69px;
+        padding-bottom:33px;
+        span{
+            color:$color-green;
+            font-size:55px;
+            font-weight:700;
+        }   
+    }
+    h3{
+        font-size:24px;
+        line-height:30px;
+        padding-bottom: 6px;
+        font-weight:700;
+        color:$color-p;
+    }
+    img{
+        padding-bottom:31px;
+    }
+    span{
+        font-size:15px;
+        line-height:20px;
+        font-weight:400;
+    }
+   .owl-theme .owl-controls .owl-buttons div{
+    color:$color-p;
+    font-size: 18px;
+    font-family: 'Conv_Raleway-SemiBold';
+    text-transform: uppercase;
+    &:hover{
+        color:$color-green;
+    }
+   }
+}
+
+.article-infinitum{
+    
+   background:#f4f4f4;
+    padding-top:43px;
+    padding-bottom:10px;
+    border-top:1px solid $color-line;
+    border-bottom:1px solid $color-line;
+    text-align:center;
+    .container{
+        position:relative;
+        .narrow-infinitum-bottom{
+            position:absolute;
+            bottom:-26px;
+            left:50%;
+            margin-left:-10px;
+        }
+        .narrow-infinitum-top{
+            position:absolute;
+            top:-53px;
+            left:50%;
+            margin-left:-10px;
+        }
+    }
+    h2{
+        font-size:36px;
+        line-height:40px;
+        color:$color-green;
+        font-weight:800;
+    }
+    p{
+        font-size: 25px;
+        line-height: 32px;
+        margin: 0 auto;
+        max-width: 745px;
+        padding-bottom:53px;
+    }
+    ul{
+        li{
+            display:inline-block;
+            padding-left:44px;
+            padding-right:44px;
+            span{
+                height: 148px;
+                width: 146px;
+                display:inline-block;
+                margin-bottom:13px;
+                background:url(#{$img-url}images/Icon-all.png) no-repeat;
+                &.img-friendly{
+                    background-position:-14px -157px;
+                }
+                &.img-resistant{
+                    background-position:-184px -157px;
+                }
+                &.img-reusable{
+                    background-position:-353px -157px;
+                }
+                &.img-resilient{
+                    background-position:-523px -157px;
+                }
+                &.img-saving{
+                    background-position:-693px -157px;
+                }
+            }
+            p{
+                font-size:16px;
+                line-height:20px;
+                text-transform:uppercase;
+                padding-bottom:15px;
+            }
+            &:first-child{
+                padding-left:0px;
+            }
+            &:last-child{
+                padding-right:0px;
+            }
+        }
+    }
+
+}
+
+.article-greener{
+    background:url(#{$img-url}images/bg-body.jpg ) repeat top left;
+    padding-top:31px;
+    padding-bottom:83px;
+    text-align:center;
+    h2{
+        font-size:42px;
+        line-height:50px;
+        color:#2098d1;
+        text-transform: none;
+        padding-bottom:7px;
+    }
+    .content-video{
+        max-width: 827px;
+        height: 555px;
+        margin: 0px auto;
+    }
+    p.text{font-size:25px;line-height:30px;margin-bottom:20px;}
+    .price{font-size:54px;line-height:60px;margin-top:44px;padding-bottom:18px;font-family:'Conv_Mark Simonson - Proxima Nova Regular',Sans-Serif;}
+    .ratings{margin-bottom:32px;}
+    .ratings{
+
+        width:234px;
+        .rating-box{
+            background:url(#{$img-url}images/stars.png) repeat-x top left;
+            height:35px;
+            background-position:0px -61px;
+        }
+        .rating{
+            height:35px;
+            background-position:0px 0px;
+            overflow: hidden;
+            background:url(#{$img-url}images/stars.png) repeat-x 0px -10px;
+        }
+    
+    }
+    .buy-now{
+        margin-bottom:28px;
+        p{
+            font-size:48px;
+            color:$color-green;
+            font-weight:600;
+            text-transform:uppercase;
+            padding-bottom:0px;
+        }
+        span{
+            width:136px;
+            margin:0 auto;
+            display:inline-block;
+            height:1px;
+            background:$color-green;
+        }
+    }
+    h4{
+        font-size:34px;
+        line-height:40px;
+        text-transform:uppercase;
+       color:$color-p;
+    }
+    .box-action{
+        margin-top:26px;
+    }
+    button{
+        display:inline-block;
+        height: 95px;
+        width: 305px;
+        margin-top:-16px;
+        border:2px solid $color-line;
+        color:$color-p;
+        margin-left:12px;
+        margin-right:12px;
+        font-size:34px;
+    }
+    .favorites{
+        height: 95px;
+        width: 94px;
+        display:inline-block;
+        background:#fff;
+        border:2px solid $color-line;
+        margin-left:12px;
+        margin-right:12px;
+        .fa{
+            color:$color-p;
+            font-size:30px;
+            line-height:95px;
+        }
+        &:hover{
+            border-color:$color-green;
+            .fa{
+               color:$color-green;
+            }
+        }
+    }
+    .intericte{
+        height: 95px;
+        width: 94px;
+        display:inline-block;
+        background:#fff;
+        border:2px solid $color-line;
+        margin-left:12px;
+        margin-right:12px;
+        .fa{
+            color:$color-p;
+            font-size:30px;
+            line-height:95px;
+        }
+        &:hover{
+            border-color:$color-green;
+            .fa{
+                color:$color-green;
+            }
+        }
+    }
+}

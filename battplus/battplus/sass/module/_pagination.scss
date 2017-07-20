@@ -1,0 +1,42 @@
+$color-border:#bdbdbd;
+.pagination{
+	margin:0px;
+	display:inline;
+	li {
+		margin:0px;
+		border:none;
+		a{
+			border-radius:0px;
+			background:none;
+			margin:0px 3px;
+			line-height:20px;
+			&:hover{
+				background-color: $color-a-hover;
+				border-color:$color-border;
+			}
+		}	
+	}
+	li.active{
+		a{
+			background-color: $color-a-hover;
+			border-color:$color-border;
+			&:hover{
+				color:#fff;
+				background-color: $color-a-hover;
+			}
+		}
+	}
+	li.first{
+		text-transform:uppercase;
+		a{
+			background-color: $color-info;
+			color:#fff;
+		}
+	}
+	
+	li:first-child > a,li:last-child > a{border-radius:0px;}
+}
+.pagination > li > a, .pagination > li > span{
+	padding: 7px 11px;
+}
+

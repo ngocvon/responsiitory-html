@@ -1,0 +1,64 @@
+#reviews{
+	
+	//padding: calculation-addition(10%,5%);
+	//width: calc-percent(650px, 1000px);
+	//width: cp(650px, 100px);
+	
+	label{margin-bottom:5px}
+	.ratings-table tr {
+	    float: left;
+	    margin-right: 15px;
+	}
+	.review{
+
+		dl{
+			margin-bottom:10px;
+		}
+		table{
+			margin-left:0px;
+			th{
+				@include styleText(14px,18px,$color-a);
+				padding-left:0px;
+				padding-right:0px;
+				font-weight:300;
+			}
+			.ratings{
+				margin-bottom:0px;
+			}
+		}
+	}
+
+	.form-review{
+
+		button{
+			margin-top:10px;
+			padding: 9px 20px;
+		}
+		.form-group{
+			margin-bottom:10px;
+		}
+		textarea{
+			height:111px;
+		}
+		
+		label{
+			span{
+				color:#f00;
+			}
+		}
+	}
+
+}
+
+@media only screen and(max-width:600px){
+	.form-review{
+		.box-input{
+			width:100%;
+			float:none;
+		}
+		.box-textarea{
+			width:100%;
+			float:none;
+		}
+	}
+}

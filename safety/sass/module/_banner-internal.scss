@@ -1,0 +1,36 @@
+.banner-internal{
+	font-size:100%;
+	background:url('../images/bannerCategory.jpg') top right;
+	height:285px;
+	padding:70px 10px 60px 42px;
+	p{
+		max-width:620px;
+		font-weight:700;
+		font-size:1em;
+	}
+	h1{
+		padding-bottom:5px;
+		font-size:3em;
+	}
+}
+
+@media only screen and(max-width:767px){
+	.banner-internal{
+		padding:30px;
+		padding-right:10px;
+		font-size:90%;
+		margin-left:-15px;
+		margin-right:-15px;	
+	}
+}
+
+@media only screen and(max-width:480px){
+	.banner-internal{
+		padding:10px;
+		font-size:73%;
+		h1{
+			font-size:1.7em;
+		}
+	}
+}
+

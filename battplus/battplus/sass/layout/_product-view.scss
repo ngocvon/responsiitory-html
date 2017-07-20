@@ -1,0 +1,270 @@
+
+.product-view{
+
+	padding-top:84px;
+	padding-bottom:72px;
+	.box-pull-video{
+		height:382px;
+		.mediaPlayer{
+			-ms-transform: scale(0.7);
+			-webkit-transform: scale(0.7);
+			transform: scale(0.7);
+		}
+	}
+	.col-button{
+		width:42%;
+		
+	}
+	.product-info{padding-left:24px;}
+	.col-fa{width:30%;}
+	.availability{
+		font-size:24px;
+		line-height:30px;
+		span{
+			color:$color-green;
+		}
+	}
+	.box-top{
+		border-bottom:1px solid $color-line;
+	}
+	.box-content{
+		border-bottom:1px solid $color-line;
+	}
+	.action{border-top:1px solid $color-line;padding-top:30px;}
+	.button-danger{display:inline-block;}
+	.flexslider-thumb li{border: 1px solid #ccc;}
+	.fa{padding:0px 3px;}
+	h1, .h1{
+		padding-bottom:15px;
+		font-size:25px;
+		font-weight:600;
+		color:$color-p;
+		line-height:35px;
+	}
+	h2, h2{
+		padding-bottom:18px;
+		font-size:30px;
+		font-weight:700;
+		color:$color-p;
+		line-height:35px;
+	}
+	.number.price{font-size:45px;line-height:50px;padding-bottom:20px;}
+	.product-shop{
+		.item-sku{
+			font-size:14px;
+			text-transform: uppercase;
+			padding-bottom:12px;
+		}
+	}
+	.number{
+		
+		.old-price{
+			margin-right:20px;
+		}
+		
+	}
+	.add-to-cart{
+
+		.box-number{
+			float:right;
+			width:167px;	
+		}
+		.stepper{
+			width:100%;
+			height:36px;
+			position:relative;
+			margin-right:13px;
+			.stepper-arrow{
+				right:0px;
+				background-color:$color-info;
+			}
+			input{
+				height:100%;
+				width:100%;
+				font-weight:normal;
+				border:1px solid #ccc;
+				border-radius:6px;
+				padding-left:10px;
+				&:focus{
+					border:1px solid #ccc;
+				}
+			}
+		}
+	}
+
+	.selecter .selecter-selected{
+		@include styleText(14px,22px,#434a54);
+		text-transform: capitalize;
+	}
+	.selecter .selecter-options{
+		@include styleText(14px,22px,#434a54);
+		text-transform: capitalize;
+	}
+	.selecter{
+		
+		width:167px;
+	}
+	.box-size{
+		width:167px;
+		margin:0 auto;
+	}
+	.price-box{
+
+		.price{
+			@include styleText(19px,22px,$color-a-hover);
+		}
+		.in-stock{
+			@include styleText(14px,18px,#8cc14f);
+			text-transform:none;
+			.fa{
+				font-size:18px;
+				padding-right:5px;
+			}	
+		}
+
+	}
+	.availability{
+		p{
+			padding-bottom:10px;
+		}
+	}
+
+	.row-action{
+		margin-bottom:25px;
+		label{
+			@include styleText(16px,28px,$color-p);
+			font-weight:400;
+			margin-bottom:5px;
+		}
+	}
+
+	.box-ratings-view{
+		padding-bottom:20px;
+		p{
+			padding-bottom:0px;
+		}
+		.number{
+			font-size:16px;
+			padding-left: 5px;
+			padding-right: 17px;
+			margin-top:-2px;
+		}
+		.ratings{margin-bottom:0px;}
+		.text{
+			font-size:18px;
+			padding-left:10px;
+			line-height: 20px;
+			a{
+				color:$color-p;
+			}
+		}
+		
+	}
+	.action-share{
+		float:right;
+		button{
+			height:35px;
+			margin-left:15px;
+			.fa{
+				padding:0px 5px;
+			}
+		}
+		.button-primary{
+			float:left;
+		}
+		.button-warning{
+			float:right;
+		}
+		.share-product-view{
+			float:left;
+		}
+		.div-btn{
+			float:right;
+			margin-left:10px;
+			.button-warning{margin-left:10px;}
+			.fa{padding:0px 4px;}
+			a:focus{
+				color:#fff !important;
+			}
+		}
+	}
+	.action{
+
+		.col-qty{
+			width:26%;
+			padding-left:0px;
+			label{
+				text-transform:uppercase;
+				padding-top: 13px;
+			}
+			.form-control{
+				width: 48px;
+				height: 52px;
+				padding:5px;
+				margin-left: 40px;
+				border-radius: 0px;
+				border:1px solid  $color-p;
+				margin-bottom:0px;
+				font-size:20px;
+				line-height:44px;
+				text-align: center;
+				background:#fff;
+				font-family: 'Conv_Mark Simonson - Proxima Nova Regular';
+			}
+			.stepper .down::before{border:0px;content: "-";color:$color-p;z-index:9999;text-indent: 0px;bottom: 33px;left: 15px;font-size:20px;}
+			.stepper .up::before{border:0px;content: "+";color:$color-huge;text-indent: 0px;top:16px;left: 15px;font-size:20px;}
+			.stepper {
+
+				position:relative;
+				width:102px;
+				margin-left: 5px;
+				float:left;
+				.stepper-arrow.up{
+					position:absolute;
+					top:0px;
+					width: 40px;
+					height: 52px;
+					border:none;border-radius:0px;right:0px;
+					background:#fff;
+					right: -26px;
+					border:1px solid  $color-p;
+					border-left:0px;
+					font-size:20px;
+					
+				}
+				.stepper-arrow.down{
+					position:absolute;top:0px;
+					left:0px;
+					width: 40px;
+					height: 52px;
+					border-radius:0px;
+					background:#fff;
+					border:1px solid  $color-p;
+					border-right:0px;
+					font-size:20px;
+					
+				}
+
+			}
+		}
+		.btn{
+			font-size:20px;
+			height:52px;
+			box-shadow:none;
+		}
+		.at-wish{
+			.icon{
+				float:left;
+				width:48px;
+				height:52px;
+				background:#fff;
+			}
+			.icon-heart{
+				margin-right:20px;
+			}
+		}
+		
+	}
+	
+}
+

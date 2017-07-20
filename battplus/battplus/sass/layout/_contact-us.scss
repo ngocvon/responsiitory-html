@@ -1,0 +1,61 @@
+.box-contact-us{
+	padding-top:57px;
+	padding-bottom:57px;
+	.col-message{
+		p{
+			font-size:15px;
+			line-height:20px;
+		}
+	}
+	.send-email{padding: 7px 13px;font-size:15px;line-height:20px;}
+	.col-input{
+		padding-right:20px;
+	}
+	.col-textarea{
+		padding-left:20px;
+	}
+	textarea.form-control{
+		height:83px;
+	}
+}
+.col-info{
+	div{margin-bottom:13px;}
+	.phone-number{margin-bottom:18px;}
+	span{
+		
+		background:url(#{$img-url}images/Icon-all.png) no-repeat;
+		display:inline-block;
+		
+	}
+	.text{
+		background:none;
+		font-size:18px;
+		line-height:24px;
+	}
+	.location{
+		width: 21px;
+		height: 28px;
+		background-position: -574px -420px;
+		margin-right:15px;
+		position: relative;
+		top: 7px;
+	}
+	.number{
+		width: 21px;
+		height: 34px;
+		background-position: -574px -470px;
+		margin-right:15px;
+		position: relative;
+		top:11px;
+		~.text{font-family:$font-family-number;}
+	}
+	.info{
+		width: 21px;
+		height: 21px;
+		background-position: -574px -522px;
+		margin-right:15px;
+		position: relative;
+		top:5px;
+	}
+
+}

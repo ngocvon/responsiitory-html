@@ -1,0 +1,34 @@
+.page-title{
+	h1{
+		text-align:left;
+	}
+}
+
+#carousel-example-generic{
+	margin-bottom:30px;
+}
+
+.label-danger, .badge-danger {
+    background: $color-red;
+    border-color: $color-red;
+    font-weight:normal;
+    margin-left:5px;
+}
+
+.banner-internal{
+	margin-bottom:28px;
+}
+
+.badge{
+	line-height: 15px;
+	padding: 5px 9px;
+	font-size:21px;
+	line-height:21px;
+}
+.viewmore{
+	background: transparent url("../images/Safety-site-sprites-category.png");
+    display: inline-block;
+    height:65px;
+    width:146px;
+    background-position:-272px -215px;
+}

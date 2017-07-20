@@ -1,0 +1,20 @@
+.box-content-internal{background:#f4f4f4;}
+.banner-internal{
+	background:url(#{$img-url}images/banner6.png) no-repeat top center;
+	height:400px;
+}
+.banner-contact-us{
+	background:url(#{$img-url}images/banner5.png) no-repeat top center;	
+}
+.box-about-us{
+	padding-top:70px;padding-bottom:87px;
+	.box-content{
+		padding-right:60px;
+	}
+}
+.banner-product{
+	background:url(#{$img-url}images/banner7.png) no-repeat top center;
+}
+.banner-promotions{
+	background:url(#{$img-url}images/banner-promotions.png) no-repeat top center;
+}

@@ -1,0 +1,72 @@
+.tap-product{
+	
+	margin-bottom:77px;
+	border:1px solid $color-line;
+	background:#fff;
+	padding-top:19px;
+	padding-right:12px;
+	padding-left:12px;
+	padding-bottom:84px;
+	.nav-tabs > li {border-left: 1px solid #aaa;}
+	.nav-tabs > li.first {border-left: 0px solid #aaa;}
+	#myTab-product{
+		padding-bottom:0px;
+		background:none;
+		border-bottom:1px solid #aaa;
+		li{
+			padding-right:80px;
+			padding-bottom:0px;
+			top:1px;
+			a{
+				@include styleText(20px,28px,$color-p);
+				text-transform:uppercase;
+				padding:0px;
+				padding-bottom:14px;
+				&:focus,&:active{
+					background:none;
+				}
+			}
+			&.active{
+				position:relative;
+				border-bottom: 1px solid $color-a;
+				a{
+					color:$color-a;
+					background:none;
+				}
+			}
+
+			&:hover{
+				a{
+					background:$color-main;
+				}
+			}
+		}
+	}
+	#myTabContent-product{
+		padding-top:34px;
+		padding-left:0px;
+		padding-right:0px;
+		.input-group-btn{
+			margin-left:10px;
+			button{
+				padding-top:10px;
+				padding-bottom:10px;
+			}
+		}
+	}
+	.panel{
+		margin-bottom:0px;
+		box-shadow: none;
+	}
+	.nav-tabs.nav-justified > li{
+		display:block;
+		width:auto;
+	}
+	.nav-tabs > li{border-left:none;}
+	.nav-tabs{background:none;}
+	.nav-tabs.nav-justified > li:first-child > a {border-radius: 0px 0px 0px;}
+	.nav-tabs.nav-justified > li:last-child > a {border-radius: 0px 0px 0px 0px;}
+	
+
+}
+

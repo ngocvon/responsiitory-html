@@ -1,0 +1,134 @@
+.main-container{
+	margin-bottom:40px;
+	position:relative;
+	z-index:1;
+    max-width: 100%; padding: 0;
+}
+
+.wrapper{
+    background:$color-main;
+    margin:0 auto;
+    margin-top:6px;
+    overflow:hidden;
+}
+
+.selecter .selecter-selected::after{
+	border-top: 4px solid #444b53;
+}
+
+h3.bg-line-soild{
+   border-top:3px solid $color-222;
+   padding-bottom:23px;
+   span{
+    position: relative;
+    top: -16px;
+    background:$color-main;
+    padding-right:15px;
+   }
+}
+
+#flexisel-link-logo {
+    a img{
+        margin:0 auto;
+    }
+}
+.slider-home-ever{
+
+    .owl-buttons{
+        width:58px;
+        position:absolute;
+        top:-82px;
+        right:0px;
+        display:none;
+    }
+
+    .owl-pagination{
+        
+        position:absolute;
+        top:-64px;
+        right:0px;
+        background:$color-main;
+        padding-left:10px;
+        display:block;
+    }
+    .owl-theme .owl-controls .owl-page span{
+        width: 16px;
+        height: 16px;
+        border-radius: 20px;
+        background:#a9a9a9;
+        opacity:1;
+        margin: 5px 2px;
+    }
+    .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span{
+        background:$color-red;
+    }
+
+    .owl-prev, .owl-next {
+        cursor: pointer;
+        height: 27px;
+        opacity: 0.5;
+        position: absolute;
+        width: 27px;
+        z-index: 100;
+        top:50%;
+        background: url("../images/sprite-mobile.png");
+        margin:0px !important;
+    }
+
+    .owl-prev{
+        
+        background-position: 0px -58px;
+        display: block;
+        right:34px;
+        transition: all 0s ease 0s;
+    }
+
+    .owl-prev:hover{
+        background-position:0px -85px;
+    }
+
+    .owl-next{
+        background-position:-27px -58px;
+        display: block;
+        right:0px;
+        transition: all 0s ease 0s;
+    }
+
+    .owl-next:hover{
+        background-position:-27px -85px;
+    }
+
+}
+
+@media screen and (max-width:990px){
+    .wrapper{
+        margin-top:0px;
+    }
+    .main-container{
+        margin-bottom:20px;
+    }
+}
+
+@media screen and (max-width:600px){
+
+    .slider-home-ever{
+        .owl-buttons{
+            display:block;
+        }
+        .owl-pagination{
+            display:none;
+        }
+    }
+
+    h3.bg-line-soild{
+        border-bottom:4px solid $color-222;
+        border-top:0px solid $color-222;
+        padding-bottom:10px;
+        margin-bottom:35px;
+        span{
+            top:0px;
+            padding-right:0px;
+        }
+    }
+
+}

@@ -1,0 +1,300 @@
+.logo {
+  
+    display: block;
+    padding-bottom: 0;
+    text-decoration: none !important;
+    background-position: 0px 0px;
+    margin-top: 12px;
+}
+
+#header {
+
+	padding:17px 0px;
+	border-bottom:1px solid $color-primary;
+	font-size:21px;
+
+	.col-bg-cart{
+		padding-left:25px;
+		float:left;
+		p{
+			@include styleText(21px,30px,$color-white);
+			
+			.bag-cart{
+				background: url("../images/Safety-site-sprites.png");
+				background-position: -117px -118px;
+				height:30px;
+				width:32px;
+				display: inline-block;
+				position: relative;
+				top: 6px;
+			}
+		}
+		p.dropdown-toggle{cursor: pointer;}
+		.badge{
+			position:relative;
+			top:-5px;
+		}
+	}
+
+	.lang{
+
+		float:left;
+		width:90px;
+		padding-left:25px;
+		ul{
+			padding-bottom:0px;
+			padding-top:7px;
+		}
+		a{
+			padding:0px;
+			background: #6f6f6f;
+			height:24px;
+			border-top-left-radius: 0px;
+			border-bottom-left-radius: 0px;
+			
+		}
+		.nav-pills{
+			li{
+				cursor:pointer;
+			}
+		}
+		#text{
+			position:relative;
+			left:-6px;
+		}
+		.fa{
+			position:relative;
+			top:-5px;
+			padding-left:1px;
+			padding-right:7px;
+		}
+		.content-flag{
+			
+			height:24px;
+			width:37px;
+			display: inline-block;
+			background-repeat:no-repeat;
+			background-position:0px 0x;
+		}
+		
+		
+		#divNewNotifications{
+			min-width:127px;
+			background: #5d5d5d;
+			border-bottom-left-radius:4px !important;
+			border-bottom-right-radius:4px !important;
+			padding:2px 0px;
+			li{
+				padding:3px 0px 0px 20px;
+			}
+			.even{
+				background: #5d5d5d;
+			}
+			.odd{
+				background: #737373;
+			}
+		}
+	}
+	
+	.header-top{
+
+		margin-top: 22px;
+		padding-left:151px;
+		text-aligin:center;
+	}
+
+	.login{
+
+		ul,p{
+			padding-bottom:0px;
+		}
+		padding-left:25px;
+		.icon-login{
+			float:left;
+			background: url("../images/Safety-site-sprites.png");
+			background-position: -91px -118px;
+			height:30px;
+			width:25px;
+			display: inline-block;
+			position: relative;
+			top: 7px;
+			margin-right:5px;
+		}
+		ul{
+			float:left;
+			li{
+				a{
+					padding:0px;
+					display:inline;
+					@include styleText(21px,38px,$color-white);
+					&:hover{
+						background:none;
+						color:$color-a-hover;
+					}
+					&:focus{
+						background:none;
+					}
+				}	
+			}
+			.last:before{
+				content:'/';
+				padding:0px 5px;
+				padding-left:7px;
+				color:$color-white;
+			}
+		}
+	}
+
+	.selecter .selecter-options{
+		border:none;
+		border-radius:4px;
+	}
+
+	.numberphone{
+
+		float:left;
+		text-transform: uppercase;
+		p{
+			padding-bottom: 0px;
+			padding-left:8px;
+		}
+		.bg-call{
+			background: url("../images/Safety-site-sprites.png");
+			background-position: -189px -119px;
+			height:30px;
+			width: 26px;
+			display: inline-block;
+			position: relative;
+			top: 7px;
+			float:left;
+		}
+		.hours{
+			display:block;
+			font-weight: 700;
+			@include styleText(13px,20px,$color-white);
+		}
+		.phone{
+			font-weight: 700;
+			@include styleText(21px,30px,$color-la);
+		}
+
+	}
+
+	.navbar-form{
+
+		margin-left:30px;
+		margin-top:0px;
+		margin-bottom:0px;
+		.form-control{
+			width:326px;
+			height:39px;
+			border-radius: 24px;
+		}
+		.search-only .search-icon{
+			color:#aab3bc;
+			font-size:22px;
+			line-height:36px;
+			width:36px;
+			height:36px;
+			background:none;
+			border:none;
+			box-shadow:none;
+		}
+	}
+
+	.col-checkout-cart{
+		p{
+			margin-bottom:0px;
+		}
+		.row-first{
+			margin-bottom:26px;
+		}
+	}
+	.col-button{
+		margin-top:-2px;
+		margin-left:20px;
+		.btn-block{
+			width:127px;
+			height:48px;
+			font-size:16px;
+		}
+	}
+	
+}
+
+@media screen and (max-width:1200px){
+	#header .login ul li a{
+		  font-size: 18px;
+	}
+	#header .numberphone .phone{
+		font-size:20px;
+	}
+	#header .numberphone .hours{
+		font-size:11px;
+	}
+	#header .col-bg-cart p{
+		font-size:18px;
+	}
+	#header .col-bg-cart .badge{
+		font-size:18px;
+	}
+	#header .col-button .btn-block {
+	    font-size: 14px;
+	    height: 40px;
+	    width: 102px;
+	}
+
+}
+
+@media screen and (max-width:1100px){
+
+	#header{
+	
+		.lang {
+		    padding-left: 20px;
+		    width: 107px;
+		}
+		.col-bg-cart{
+			padding-left: 20px;
+		}
+	}
+
+}
+
+@media screen and (max-width:990px){
+	#header{
+		 padding:0px;
+		 border-bottom: 0px;
+		.header_article{
+			padding-top:0px;
+		}
+		.col-logo{
+			margin-top:10px;
+			margin-bottom:15px;
+			width:100%;
+			a{
+				img{
+					margin:0 auto;
+				}
+			}
+		}
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+

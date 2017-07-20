@@ -1,0 +1,139 @@
+$color-border-input:#575D6D;
+$color-border-input-focus:#575D6D*0.8;
+
+input,select{
+	@include styleText(18px,28px,$color-p);
+	font-family:$font-family-body;
+	@include transition-y();
+	border-radius:0px;
+}
+input[type='submit']{
+	width:auto;
+}
+.form-control{
+	border: 1px solid $color-border-input;
+	color:$color-p;
+	margin-bottom:15px;
+	border-radius: 0px;
+	background:none;
+}
+.form-control:focus{
+	outline:none;
+	box-shadow:none;
+	border: 1px solid $color-border-input-focus;
+}
+select{
+	line-height:24px;
+	background: transparent;
+	color:$color-p;
+}
+
+.selecter .selecter-item{
+	font-size:12px;
+	line-height:18px;
+	text-transform: uppercase;
+}
+
+.selecter .selecter-item.selected{
+	background:$color-huge;
+}
+
+.selecter .selecter-item.selected:hover{
+	background:$color-huge*1.1;	
+}
+
+textarea{
+	resize:none;
+	padding:0px;
+	border-radius: 0px;
+	@include styleText(18px,22px,$color-p);	
+}
+
+.error{
+	border: 1px solid #f00;
+}
+
+label{
+	@include styleText(14px,22px,$color-p);
+	margin:0px;
+	margin-left:0px;
+}
+
+.radio-inline{
+	 padding-left: 10px;
+	 margin-left:0px;
+}
+
+.text-order{
+	padding-top:0px;
+	font-size:17px;
+	line-height:20px;
+	font-weight:400;
+
+}
+.input-number{
+	width:50px;
+	padding:0px 10px;
+}
+.form-line.paragraphText{
+	textarea{
+		border:1px solid #999;
+		padding:13px;
+	}
+}
+.form-group.paragraphText{
+	height:135px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.form-group.no-bg-button{
+
+	border: 0px solid #dddddd;
+	background:none;
+	padding:0px;
+
+}
+.form-list{
+	em{
+		color:#f00;
+	}
+}
+.radio{
+	margin-bottom:10px;
+}
+.form-group.no-border{
+	border:none !important;
+	padding:0px !important;
+	p{
+		padding-bottom:0px;
+		font-size:17px;
+		line-height:37px;
+		font-family: 'Cabin', sans-serif;
+		font-weight:400;
+		color: #b7b7b7;
+	}
+}
+
+.col-form{
+	width:80%
+}
+
+.iradio_flat{
+	position: relative;
+}
+.search-only .search-icon {border:none;background:none;height:30px;cursor:pointer;left:auto;right:8.5px;color:$color-huge;}
+.search-only .form-control:last-child {
+  padding-right: 40px;
+  padding-left:10px;
+}
+.form-search .search-query, .form-search .search-query:first-child, .form-search .search-query:last-child{ border-radius: 0px;}
+
+
+@media only screen and(max-width:1025px){
+
+	.group-radio.col-xs-3{
+		width: 25%;
+	}
+
+}

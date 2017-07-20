@@ -1,0 +1,196 @@
+$color-border-sub-s:#bdbdbd;
+
+.sub-navigation {
+   
+   border-bottom: 1px solid $color-border-sub-s;
+   .selecter-selected:before {
+      position: absolute;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      margin-top: 10px;
+      margin-left: 74%;
+      content: "";
+   }
+   .selecter-selected:after {
+      position: absolute;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      margin-top: 0px;
+      content: "";
+      left: 81%;
+   }
+   .row{
+      height:69px;
+   }
+   .col-left{
+      border-right: 1px solid $color-border-sub-s;
+      height:100%;
+      padding-top:15px;
+      .select-box.left{
+         float:left;
+         width:25%;
+         padding-right:10px;
+         .selecter-selected{
+            background:$color-huge;
+            height:40px;
+            color:#fff;
+            line-height: 23px;
+            border-radius: 0px;
+            border: 0px solid #ccc;
+            font-size:0.75em;
+            text-transform: uppercase;
+            line-height: 26px;
+         }
+         .selecter-selected:before {
+            border-top: 7px solid rgb(255, 255, 255);
+         }
+         .selecter-selected:after {
+            border-top: 7px solid rgb(0, 55, 135);
+         }
+      }
+
+      .block-search{
+
+         border: 1px solid $color-border-sub-s;
+         float:left;
+         width:75%;
+         height:40px;
+         .form-search{
+            width:63%;
+            height:100%;
+            float:right;
+            input{
+               border-radius:0px;
+               border:0px solid #ccc;
+               padding-left:0px;
+            }
+            .btn{
+               border-radius: 0px;
+               height: 40px;
+               margin-left: 0px;
+               margin-top: -1px;
+               margin-right: -1px;
+               background:$color-info;
+               border-color:$color-info;
+               text-transform: uppercase;
+               &:hover{
+                  background:$color-info*1.1;
+               }
+            }
+         }
+         .select-box{
+            width:101px;
+            border-right: 1px solid $color-border-sub-s;
+            height:100%;
+            .selecter .selecter-options{
+               left: -1px;
+               width:102%;
+            }
+            .selecter-selected{
+               border: 0px solid $color-border-sub-s;
+               font-size:0.75em;
+               color:$color-success;
+               height: 38px;
+               line-height: 24px;
+               text-transform: uppercase;
+            }
+
+            .selecter-selected:before {
+               border-top: 7px solid #a4a4a4;
+               margin-left: 62%;
+            }
+            .selecter-selected:after {
+               border-top: 7px solid #fff;
+               left: 72%;
+            }
+
+         }
+         .label-search{height: 100%;border-right: 1px solid $color-border-sub-s;line-height: 37px;padding: 0px 10px;font-size:0.75em;text-transform:uppercase;color:$color-success;}
+      }
+   }
+
+   .col-right{
+
+      height:100%;
+      .numberphone{
+         height:100%;
+         border-right: 1px solid $color-border-sub-s;
+         float:left;
+         text-transform: uppercase;
+         padding-top:10px;
+         padding-left:10px;
+         padding-right:45px;
+         p{
+            padding-bottom: 0px;
+            padding-left:8px;
+         }
+         p.hours{
+            color:#bdbdbd;
+         }
+         .bg-call{
+            background: url(#{$img-url}images/sprites.png);
+            background-position:-106px 0px;
+            height:36px;
+            width: 36px;
+            margin-top:10px;
+         }
+      }
+      .box-share{
+         padding-top:15px;
+         padding-left:15px;
+         float:left;
+         .label-share{
+            padding-right:20px;
+         }
+      }
+      p{
+         color:$color-h;
+         font-size:0.875em;
+         text-transform: uppercase;
+         line-height:23px;
+      }
+      .share{
+         padding-top:6px;
+      } 
+
+   }
+}
+
+@media (max-width:1200px){
+
+   .sub-navigation{
+
+      font-size:0.9em;
+      .col-right{
+         .numberphone{
+            padding-right:10px;
+            padding-left:0px;
+         }
+         .box-share{
+            .label-share{
+               padding-right:10px;
+            }
+         } 
+      } 
+   }
+
+}
+
+
+@media (max-width:1100px){
+
+   .sub-navigation{
+      font-size:0.8em;
+      .col-left{
+         .block-search{
+            .form-search{
+               width:53%;
+            }
+         } 
+      } 
+   } 
+
+}
+
+
+

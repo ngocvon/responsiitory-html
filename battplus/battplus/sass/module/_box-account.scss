@@ -1,0 +1,32 @@
+.box-account{
+	padding-top:20px;
+	margin-bottom:18px;
+	.header-content-right-register{
+		.icon{
+			background:url(#{$img-url}images/Icon-all.png) no-repeat;
+			background-position:-465px -328px;
+			height: 30px;
+			width: 29px;
+			display:inline-block;
+		}
+		.text{display:inline-block;}
+	}
+	.header-content-right-minicart{
+		width:36%;
+		.icon{
+			background:url(#{$img-url}images/Icon-all.png) no-repeat;
+			background-position:-509px -328px;
+			height: 30px;
+			width: 34px;
+			display:inline-block;
+		}
+		.text{display:inline-block;}
+	}
+	a{
+		color:#fff;
+		font-size:18px;
+		&:hover{
+			color:#fff*0.9;
+		}
+	}
+}

@@ -1,0 +1,35 @@
+$color-bg-badge:#003787;
+.stepper .up{
+	border: 1px solid $color-info;
+}
+.page-title{
+	h1{
+		text-align:left;
+	}
+}
+
+#carousel-example-generic{
+	margin-bottom:30px;
+}
+
+.label-danger, .badge-danger {
+    background: $color-bg-badge;
+    border-color: $color-bg-badge;
+    font-weight:normal;
+    margin-left:5px;
+}
+.badge{
+	padding: 0px 4px;
+	font-size: 12px;
+	line-height: 16px;
+	background:#404950;
+}
+.a-cart{
+
+	display:block;
+	position:relative;
+	.bag-cart{position:absolute;top:-7px;right:0px;}
+	> .fa{font-size:31px;color:#404950;}
+	.icon{position: absolute;top: -4px;right: -25px;.fa{font-size:18px;line-height:19px;color:#404950;}}
+
+}

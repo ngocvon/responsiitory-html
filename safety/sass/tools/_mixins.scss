@@ -1,0 +1,498 @@
+/****************************************************************************************
+Description: Sass mixins
+*****************************************************************************************/
+
+@function calculation-addition($some-number, $another-number){
+  @return $some-number + $another-number;
+}
+
+@function calculation-substraction($some-number, $another-number){
+  @return $some-number - $another-number;
+}
+
+@function calculation-multiplication($some-number, $another-number){
+  @return $some-number * $another-number;
+}
+
+@function calculation-division($some-number, $another-number){
+  @return $some-number / $another-number;
+}
+
+@function calc-percent($target, $container) {
+  @return ($target / $container) * 100%;
+}
+
+@function cp($target, $container) {
+  @return calc-percent($target, $container);
+}
+
+@mixin font-faceEx($fontname, $fontfile) {
+    @font-face {
+        font-family: $fontname;
+        src: url('../fonts/'+$fontfile+'.eot');
+        src: url('../fonts/'+$fontfile+'.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/'+$fontfile+'.woff') format('woff'),
+		url('../fonts/'+$fontfile+'.ttf') format('truetype'),
+		url('../fonts/'+$fontfile+'.svg#'+$fontfile) format('svg');
+        font-weight: normal;
+        font-style: normal;
+	}
+}
+
+@mixin background($background,$width,$height){
+    background: $background;
+    width: $width;
+    height: $height;
+}
+
+@mixin spriteicon($width, $height, $iconfolder, $iconname){
+    @include sizeEx($width,$height);
+    display:block;
+    position: absolute;
+    top:50%;
+    margin-top:-($height/2);
+    background:sprite($iconfolder, $iconname) no-repeat;
+}
+
+@mixin responsive($width, $maxwidth, $padding){
+    .container{
+        width: $width;
+        max-width: $maxwidth;
+        padding: 0 $padding;
+    }
+}
+
+@mixin position($type: null, $top: null, $right: null, $bottom: null, $left: null, $index: null){
+    position: $type;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+    z-index: $index;
+}
+
+@mixin font($name: $font-family-sans-serif, $size: $font-size-base, $color: $text-color, $weight: normal, $style: normal){
+    font-family:$name;
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+    font-style: $style;
+}
+
+@mixin sizeEx($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin list-unstyledEx() {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+@mixin list-inlineEx() {
+    @include list-unstyledEx;
+    >li{
+        float:left;
+        *zoom: 0;
+        /*display:inline-block;
+        zoom: 1;
+        *display:inline;*/
+    }
+}
+
+@mixin border-radius($radius: 5px){
+    -moz-border-radius:$radius;
+    -webkit-border-radius:$radius;
+    border-radius:$radius;
+}
+
+@mixin rotate($degrees) {
+    -webkit-transform: rotate(#{$degrees}deg);
+    -moz-transform: rotate(#{$degrees}deg);
+    -ms-transform: rotate(#{$degrees}deg);
+    -o-transform: rotate(#{$degrees}deg);
+    transform: rotate(#{$degrees}deg);
+    filter:  progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=-#{sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)});
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=-#{sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)})";
+    zoom: 1;
+}
+
+
+@mixin setbackground($bg,$style) {
+  $src:"../images/";
+  background: url( $src + $bg ) + " "+ $style;
+}
+
+@mixin space-height($h){
+  height:$h * $spacing + px;
+}
+
+@mixin positionTL($top,$left){
+  position: absolute;
+  top: $top;
+  left: $left;
+}
+
+@mixin positionTR($top,$right){
+  position: absolute;
+  top: $top;
+  right: $right;
+}
+
+@mixin positionBL($botton,$left){
+  position: absolute;
+  bottom: $botton;
+  left: $left;
+}
+
+@mixin positionBR($botton,$right){
+  position: absolute;
+  bottom: $botton;
+  right: $right;
+}
+
+@mixin widthHeight($width,$height){
+  width: $width;
+  height: $height;
+}
+
+@mixin gradientbg($color1,$color2){
+  background-color: $color1;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($color1), to($color2)); /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(top, $color1, $color2); /* Firefox 3.6+ */
+  background: -moz-linear-gradient(top, $color1, $color2); /* IE 10 */
+  background: -ms-linear-gradient(top, $color1, $color2); /* Opera 11.10+ */
+  background: -o-linear-gradient(top, $color1, $color2);
+}
+
+@mixin animate($value){
+  transition-duration:$value +s;
+  -webkit-transition-duration:$value +s;
+  -o-transition-duration:$value +s;
+  -ms-transition-duration:$value+s;
+}
+
+@mixin animatewidth($value){
+  transition-duration:$value +s;
+  -webkit-transition-duration:$value +s;
+  -o-transition-duration:$value +s;
+  -ms-transition-duration:$value+s;
+  -webkit-transition-property: width; /* Safari */
+  transition-property: width;
+}
+
+@mixin setfontsize($value1,$value2){
+  font-size: ($value1/$value2) +em;
+}
+
+
+@mixin typography-v($base-font-size,$color,$link-color,$link-color-hover,$colorspan){
+
+  color: $color;
+  a{
+    color: $link-color;
+    font-size:$base-font-size;
+    &:hover{
+      color: $link-color-hover;
+    }
+  }
+  h1{
+    margin: 0px;
+    padding-bottom: 15px;
+    color: $color;
+    span{color:$colorspan}
+    a{
+      font-size:inherit;
+    }
+  }
+  h2{
+    margin: 0px;
+    padding-bottom: 15px;
+    color: $color;
+    span{color:$colorspan}
+    a{
+      font-size:inherit;
+    }
+  }
+  h3{
+    margin: 0px;
+    padding-bottom: 15px;
+    color: $color;
+    span{color:$colorspan} 
+    a{
+      font-size:inherit;
+    }
+  }
+  h4{
+    margin: 0px;
+    padding-bottom: 15px;
+    color: $color;
+    span{color:$colorspan}
+    a{
+      font-size:inherit;
+    }
+  }
+  h5{
+    margin: 0px;
+    padding-bottom: 15px;
+    color: $color;
+    span{color:$colorspan}
+    a{
+      font-size:inherit;
+    }
+  }
+  h6{
+    margin: 0px;
+    padding-bottom: 15px;
+    color: $color;
+    span{color:$colorspan}
+    a{
+      font-size:inherit;
+    }
+  }
+  p{
+    margin: 0px;
+    padding-bottom: 15px;
+    color: $color;
+    line-height:1.445em;
+    span{color:$colorspan}
+    a{
+      font-size:inherit;
+    }
+  }
+  strong{
+    color: inherit;
+  }
+  small{
+    color: inherit;
+  }
+  span{
+    color: inherit;
+  }
+  ol,ul{
+    padding:0px;
+    text-align:left;
+    width:60%;
+    margin:0 auto;
+    margin-bottom:18px;
+    li{
+      color: $color;
+      width:100%;
+      font-size:$base-font-size;
+      line-height:1.445em;
+      background:none;
+      list-style: inherit;
+      list-style-position: inside;
+      a{
+        font-size:inherit;
+      }
+      ul,ol{
+        margin-bottom:0px;
+      }
+
+    }
+  }
+  
+  table{
+    width:auto;
+    margin: 0 auto;
+    tr{
+      td,th{
+        padding: 10px;
+        font-size:$base-font-size;  
+          p,ul li,ol li{
+            font-size: $base-font-size;
+            width:auto;
+            padding: 0px;
+            margin: 0px;
+            width:100%;
+          }
+        
+      }
+    }
+    tr:first-child td{
+      font-weight:400;
+    }    
+  }
+
+}
+
+@mixin position($top,$left,$right,$bottom){
+
+  top:$top;
+  left:$left;
+  right:$right;
+  bottom:$bottom;
+
+}
+
+@mixin positionRelative($top,$right,$bottom,$left){
+
+  position:relative;
+  top:$top;
+  left:$left;
+  right:$right;
+  bottom:$bottom;
+  
+}
+
+@mixin positionAbsolute($top,$right,$bottom,$left){
+
+  position:absolute;
+  top:$top;
+  left:$left;
+  right:$right;
+  bottom:$bottom;
+  
+}
+
+@mixin styleText($fontSize,$lineHeight,$color){
+
+  font-size:$fontSize;
+  color:$color;
+  line-height:$lineHeight;
+}
+
+@mixin stylePadding($paddingTop,$paddingRight,$paddingBottom,$paddingLeft){
+
+  padding-top:$paddingTop;
+  padding-right:$paddingRight;
+  padding-bottom:$paddingBottom;
+  padding-left:$paddingLeft;
+
+}
+
+@mixin styleMargin($marginTop,$marginRight,$marginBottom,$marginLeft){
+
+  margin-top:$marginTop;
+  margin-right:$marginRight;
+  margin-bottom:$marginBottom;
+  margin-left:$marginLeft;
+  
+}
+
+@mixin transition-y(){
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+@mixin transition-none(){
+  -webkit-transition: all 0s ease 0s;
+  -moz-transition: all 0s ease 0s;
+  -ms-transition: all 0s ease 0s;
+  -o-transition: all 0s ease 0s;
+  transition: all 0s ease 0s;
+}
+
+@mixin transition-y-time($time){
+  -webkit-transition: all $time ease 0s;
+  -moz-transition: all $time ease 0s;
+  -ms-transition: all $time ease 0s;
+  -o-transition: all $time ease 0s;
+  transition: all $time ease 0s;
+}
+
+@mixin rotate-360($deg){
+  -moz-transform:scale(1) rotate($deg);
+  -webkit-transform:scale(1) rotate($deg);
+  -o-transform:scale(1) rotate($deg);
+  transform:scale(1) rotate($deg);
+}
+
+@mixin img-center(){
+  margin: auto;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;  
+}
+
+@mixin text-center(){
+  
+    display:table-cell;
+    vertical-align: middle;  
+}
+
+@mixin positionFTR($top,$right){
+
+  position: fixed;
+  top: $top;
+  right: $right;
+}
+
+@mixin texttranform(){
+  
+  color: $white-color*1.1;
+  content: attr(data-hover);
+  position: absolute;
+  opacity: 0;
+  text-shadow: 0 0 1px rgba(255,255,255,0.3);
+  -webkit-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+  -moz-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+  transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  pointer-events: none;
+
+}
+
+@mixin texttranformHover(){
+  
+  -webkit-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+  -moz-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+  transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+  opacity: 1;
+
+}
+
+@mixin img-hover-start-one(){
+
+  -webkit-transition-property: background-image;
+  -webkit-transition-duration: 1.0s;
+  -webkit-transition-timing-function: ease-out;
+  transition-property: background-image;
+  transition-duration: 1.0s;
+  transition-timing-function: ease-out;
+ 
+}
+
+@mixin img-hover-start-two(){
+
+  transform: translateZ(0px);
+  transition-duration: 500ms;
+  transition-property: transform;
+}
+
+@mixin img-hover-start-three(){
+// for img opacity o tren
+  transition:all 2s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+}
+
+@mixin img-hover(){
+  transform: scale(1.2);
+}
+
+@mixin img-hover-two(){
+  transform: scale(1.1) rotate(-1.5deg);
+}
+
+@mixin a(){
+  transition: color 300ms ease-in-out 0s,
+  background-color 300ms ease-in-out 0s, 
+  background-position 300ms ease-in-out 0s;
+}
+
+ @mixin background-gradient(){
+
+  background: #af0fa7;
+  background:-moz-linear-gradient(top , #af0fa7 0%, #c673be 100%);
+  background:-o-linear-gradient(top , #af0fa7 0%, #c673be 100%);
+  background:-ms-linear-gradient(top , #af0fa7 0%, #c673be 100%);
+  background: -webkit-linear-gradient(top, #af0fa7, #c673be);
+ }

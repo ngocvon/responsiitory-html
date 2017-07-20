@@ -1,0 +1,280 @@
+$color-success:#b3272d;
+$color-success-hover:#bb3d42;
+
+$color-default:#222;
+$color-default-hover:#222*1.3;
+
+$color-danger:#aab2bd;
+$color-danger-hover:#c1c6ce;
+
+$color-warning:#fabf33;
+$color-warning-hover:#fabf33*1.1;
+
+button:active {
+	position:relative;
+	top:1px;
+}
+
+button:after {
+	border-radius:6px;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%; 
+	height: 0px;
+    margin: auto;
+    top: 0; bottom: 0; left: 0; right: 0;
+    z-index: -1;
+    @include transition-y-time(0.3s);
+}
+button:before{
+	border-radius:6px;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    margin: auto;
+    top: 0; bottom: 0; left: 0; right: 0;
+    z-index: -2;
+}
+
+.button-default:after {
+	border-radius:6px;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%; 
+	height: 0px;
+    margin: auto;
+    top: 0; bottom: 0; left: 0; right: 0;
+    z-index: -1;
+    @include transition-y-time(0.3s);
+}
+.button-default:before{
+	border-radius:6px;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    margin: auto;
+    top: 0; bottom: 0; left: 0; right: 0;
+    z-index: -2;
+}
+
+.button-primary:after {
+	border-radius:6px;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%; 
+	height: 0px;
+    margin: auto;
+    top: 0; bottom: 0; left: 0; right: 0;
+    z-index: -1;
+    @include transition-y-time(0.3s);
+}
+.button-primary:before{
+	border-radius:6px;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    margin: auto;
+    top: 0; bottom: 0; left: 0; right: 0;
+    z-index: -2;
+}
+.style-button{
+
+	border:none;
+	text-transform: uppercase;
+	font-size:14px;
+	line-height:16px;
+	text-decoration:none;
+	color:#ffffff;	
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	display:block;
+	cursor:pointer;
+	padding:10px;
+	font-weight:normal;
+	position: relative;
+	z-index:1;
+	display: block;
+}
+
+.button-primary {
+	background-color:$color-la;
+	@extend .style-button;
+	&:hover{
+		color:#fff;
+	}
+}
+
+.button-primary:before {
+    background-color:$color-la;
+}
+
+.button-primary:after {
+    background-color:$color-la*1.1;
+}
+
+.button-primary:hover:after {
+    height: 100%;
+}
+
+.button-info {
+	background-color:$color-greend;
+	@extend .style-button;
+	&:hover{
+		color:#ffffff;
+	}
+}
+
+.button-info:before {
+   background-color:$color-greend;
+}
+
+.button-info:after {
+   background-color:$color-greend*1.1;
+}
+
+.button-info:hover:after {
+    height: 100%;
+}
+
+
+.button-default {
+	background-color:$color-default;
+	@extend .style-button;
+	&:hover{
+		color:#ffffff;
+	}
+}
+
+.button-default:before {
+   background-color:$color-default;
+}
+
+.button-default:after {
+   background-color:$color-default-hover;
+}
+
+.button-default:hover:after {
+    height: 100%;
+}
+
+/*button danger*/
+
+.button-success {
+	background-color:$color-success;
+	@extend .style-button;
+	&:hover{
+		color:#ffffff;
+	}
+}
+
+.button-success:before {
+   background-color:$color-success;
+}
+
+.button-success:after {
+   background-color:$color-success-hover;
+}
+
+.button-success:hover:after {
+    height: 100%;
+}
+
+/*button danger*/
+
+.button-danger {
+	background-color:$color-danger;
+	@extend .style-button;
+	&:hover{
+		color:#ffffff;
+	}
+}
+
+.button-danger:before {
+   background-color:$color-danger;
+}
+
+.button-danger:after {
+   background-color:$color-danger-hover;
+}
+
+.button-danger:hover:after {
+    height: 100%;
+}
+
+/*button warning*/
+
+.button-warning:after {
+	border-radius:6px;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%; 
+	height: 0px;
+    margin: auto;
+    top: 0; bottom: 0; left: 0; right: 0;
+    z-index: -1;
+    @include transition-y-time(0.3s);
+}
+.button-warning:before{
+	border-radius:6px;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    margin: auto;
+    top: 0; bottom: 0; left: 0; right: 0;
+    z-index: -2;
+}
+.button-warning {
+	background-color:$color-warning;
+	@extend .style-button;
+	&:hover{
+		color:#ffffff;
+	}
+}
+
+.button-warning:before {
+   background-color:$color-warning;
+}
+
+.button-warning:after {
+   background-color:$color-warning-hover;
+}
+
+.button-warning:hover:after {
+    height: 100%;
+}
+
+@media (max-device-width: 990px){
+
+	.button-primary:hover:after{
+		height:0px;
+	}
+	.button-info:hover:after{
+		height:0px;
+	}
+	.button-default:hover:after{
+		height:0px;
+	}
+	.button-success:hover:after{
+		height:0px;
+	}
+	.button-danger:hover:after{
+		height:0px;
+	}
+	.button-warning:hover:after{
+		height:0px;
+	}
+	
+}

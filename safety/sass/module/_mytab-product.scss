@@ -1,0 +1,109 @@
+.tap-product{
+	
+	margin-bottom:30px;
+	.nav-tabs > li {
+	    border-left: 1px solid #aaa;
+	}
+	.nav-tabs > li.first {
+	    border-left: 0px solid #aaa;
+	}
+	#myTab-product{
+		padding-bottom:0px;
+		background:#5d5d5d;
+		border-bottom:1px solid #aaa;
+		li{
+
+			a{
+				@include styleText(15px,20px,$color-a);
+				text-transform:uppercase;
+				padding: 12px 46px;
+			}
+			&.active{
+				position:relative;
+				bottom:-1px;
+				a{
+					background:$color-main;
+				}
+			}
+			&:hover{
+				a{
+					background:$color-main;
+				}
+			}
+		}
+		li.last.active{
+			border-right: 1px solid #aaa;
+		}
+
+	}
+
+	#myTabContent-product{
+
+		padding:40px;
+		ul{
+			margin-left:13px;
+			li{
+				list-style-type:disc;
+				@include styleText(14px,28px,$color-p);
+			}
+			li:first-letter{
+				text-transform:uppercase;
+			}
+		}
+		p{
+			font-size:14px;
+		}
+		.tap-logo{
+			margin-top:10px;
+			margin-bottom:15px;
+			a{
+				height:83px;
+				width:100px;
+				display:inline-block;
+				background:url('../images/S3-SRB-HRO.png')
+			}
+			a.s3{
+				background-position:0px 0px;
+			}
+			a.srp{
+				background-position:0px 0px;
+			}
+			a.hro{
+				background-position:0px 0px;
+			}
+			a.shoe{
+				background-position:0px 0px;
+			}
+		}
+	}
+
+	.panel{
+		margin-bottom:0px;
+		box-shadow: none;
+		border:1px solid #aaa;
+	}
+
+}
+
+@media screen and(max-width:767px){
+
+	.tap-product{
+		#myTab-product{
+			border-bottom:0px solid #aaa;
+			li{
+				float:none;
+				border:0px;
+				border-bottom:1px solid #aaa;
+				bottom:0px;
+				a{
+					text-align:center;
+				}
+			}
+
+		}
+		#myTabContent-product{
+			padding: 20px;
+		}
+	}
+	
+}

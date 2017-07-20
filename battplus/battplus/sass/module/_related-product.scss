@@ -1,0 +1,15 @@
+.top-related-product{
+
+	border:1px solid $color-line;
+	padding:20px;
+
+	h2{border-bottom: 1px solid $color-line;font-size:16px;padding-bottom: 45px;text-align: center;}
+	h3{font-size:13px;line-height:20px;color:$color-p;padding-bottom:5px;}
+	.item-title{margin-bottom:1px;}
+	#carousel-related-product{margin-top:30px;}
+	.owl-buttons {position: absolute;right: 128px;padding-left: 10px;display: block;top: -82px;}
+	.owl-theme .owl-controls .owl-buttons div{margin: 8px;}
+	.price-box{margin-top:0px;}
+	.item-info{text-align: left;}
+
+}	

@@ -1,0 +1,110 @@
+/*
+ Cloud Zoom CSS. (c)2012-2013 Star Plugins.
+*/
+
+/* CSS for lens */
+.cloudzoom-lens {
+    border:1px solid #888;
+    width:100px;
+    height:100px;
+    box-shadow: -0px -0px 10px rgba(0,0,0,0.40);
+    cursor:pointer;
+    z-index: 10;
+}
+/* CSS for zoom window. */
+.cloudzoom-zoom {
+    border:1px solid #888;
+    width:500px;
+    height:200px;
+    box-shadow: -0px -0px 10px rgba(0,0,0,0.40);
+    z-index:9999;
+}
+/* CSS for zoom window in 'inside' mode. */
+.cloudzoom-zoom-inside {
+    border:none;
+    box-shadow:none;
+    z-index:9999;
+}
+
+/* CSS for captions */
+.cloudzoom-caption {
+    display:none;   /* CSS captions should be hidden initially */
+    text-align: left;
+    background-color:#000;
+    color:#fff;
+    font-weight:bold;
+    padding:10px;
+    font-family: sans-serif;
+    font-size:11px;
+}
+
+/* A blank image */
+.cloudzoom-blank {
+    background-image:url(blank.png);
+}
+
+/* The animated ajax loading image */
+.cloudzoom-ajax-loader {
+    background-image:url(ajax-loader.gif);
+    width:32px;
+    height:32px;
+}
+
+
+/**/
+
+/*
+ Jet Zoom CSS. (c)2012-2013 Star Plugins.
+ This CSS can be altered to change the look and size of the lens.
+*/
+.jetzoom-lens {
+    border:none;
+    width:80%;
+    height:80%;
+    border-radius: 20px;
+    box-shadow: -0px -0px 10px rgba(0,0,0,0.40);
+    cursor:none;
+}
+
+/* A blank image */
+.jetzoom-blank {
+    background-image:url(blank.png);
+}
+
+/* The animated ajax loading image */
+.jetzoom-ajax-loader {
+    background-image:url(ajax-loader.gif);
+    width:32px;
+    height:32px;
+}
+
+/* 
+    (c)2012-2014 Star Plugins
+    This css is used to style the dashboard buttons.
+    Change the CSS and/or image to suit the style of your website.
+*/
+
+.starzoom-reset-but, .starzoom-in-but,.starzoom-out-but { 
+    background-image: url("dashboard.png");
+    background-color: #f90;
+    height:32px;
+    width:32px;
+    border:1px solid #444;
+    border-radius: 5px;
+    float:left;
+    margin-right:10px;
+    
+}
+.starzoom-reset-but {
+    background-position: -0px 0px;
+}
+.starzoom-in-but {
+    background-position: -64px 0px;
+}
+.starzoom-out-but {
+    background-position: -32px 0px;
+}
+
+.starzoom-blank {
+    background-image: url("blank.png");
+}

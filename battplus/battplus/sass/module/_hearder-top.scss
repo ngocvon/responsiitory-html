@@ -1,0 +1,26 @@
+.hearder-top{
+
+	background:url(#{$img-url}images/bag-battplus.png ) repeat top left;
+	height:126px;
+	position:absolute;
+	top:0px;left:0px;
+	width:100%;
+	p{
+		color:#fff;
+		font-size:15px;
+		text-transform:uppercase;
+		padding-top:43px;
+		padding-bottom:0px;
+		padding-left:8px;
+		line-height:20px;
+	}
+	.header-top-right{padding-left:0px;padding-right:30px;}
+	.container{position:relative;}
+	.img-battplus{
+	    position: absolute;
+	    top: 140px;
+	    z-index:1;
+    }
+
+    	
+}

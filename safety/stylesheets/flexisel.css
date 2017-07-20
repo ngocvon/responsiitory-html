@@ -1,0 +1,136 @@
+.clearout {
+    height:20px;
+    clear:both;
+}
+.nbs-flexisel-container {
+    position:relative;
+    max-width:100%;
+}
+.nbs-flexisel-ul {
+    position:relative;
+    width:9999px;
+    margin:0px;
+    padding:0px;
+    list-style-type:none;   
+    text-align:center;  
+}
+
+.nbs-flexisel-inner {
+    overflow:hidden;
+    float:left;
+    width:100%;
+}
+
+.nbs-flexisel-item {
+    float:left;
+    margin:0px;
+    padding:0px;
+    cursor:pointer;
+    position:relative;
+    line-height:0px;
+}
+.nbs-flexisel-item img {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width:300px;
+}
+
+/*** Navigation ***/
+
+.nbs-flexisel-nav-left,
+.nbs-flexisel-nav-right {
+
+    width: 22px;
+    height: 22px; 
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    opacity: 1;
+    right: 0px;
+
+}
+
+.nbs-flexisel-nav-left.desktop,.nbs-flexisel-nav-right.desktop{
+  top: -40px !important;  
+}
+
+.nbs-flexisel-nav-left {
+
+    right: 18px;
+    background: url("../images/sprites.png");
+    background-position: -184px -43px;
+    height: 23px;
+    width: 21px;
+    display: block;
+    -webkit-transition: all 0s ease 0s;
+    -moz-transition: all 0s ease 0s;
+    -ms-transition: all 0s ease 0s;
+    -o-transition: all 0s ease 0s;
+    transition: all 0s ease 0s;
+}
+
+.nbs-flexisel-nav-left:hover{
+    background-position: -184px -65px;
+}
+
+.nbs-flexisel-nav-right {
+
+    right: -5px;
+    background: url("../images/sprites.png");
+    background-position: -204px -43px;
+    height: 23px;
+    width: 21px;
+    display: block;
+    -webkit-transition: all 0s ease 0s;
+    -moz-transition: all 0s ease 0s;
+    -ms-transition: all 0s ease 0s;
+    -o-transition: all 0s ease 0s;
+    transition: all 0s ease 0s;
+}
+
+.nbs-flexisel-nav-right:hover{
+    background-position: -204px -65px;
+}
+
+@media screen and (max-width:1024px){
+
+    .nbs-flexisel-nav-left{
+        right: 19px;
+    }
+    .nbs-flexisel-nav-right{
+        right: -4px;
+    }
+    
+}
+
+@media screen and (max-width:767px){
+
+    .nbs-flexisel-nav-left {
+        background: rgba(0, 0, 0, 0) url("../images/sprites.png") repeat scroll -99px -43px;
+        display: block;
+        height: 43px;
+        left: -20px;
+        transition: all 0s ease 0s;
+        width: 43px;
+    }
+    .nbs-flexisel-nav-left:hover{
+        background-position: -99px -87px;
+    }
+    .nbs-flexisel-nav-right {
+        background: rgba(0, 0, 0, 0) url("../images/sprites.png") repeat scroll -141px -42px;
+        display: block;
+        height: 43px;
+        right: -20px;
+        transition: all 0s ease 0s;
+        width: 43px;
+    }
+    .nbs-flexisel-nav-right:hover{
+        background-position: -141px -85px;
+    }
+
+}
+
+

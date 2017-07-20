@@ -1,0 +1,70 @@
+﻿
+// Tính năng responsive
+$container-width: 				null;	// Giới hạn chiều rộng và tắt responsive
+$container-maxwidth: 			980px;	// Giới hạn chiều rộng vẫn giữ responsive
+$container-padding: 			0;
+
+// Sprite images
+//$icons: sprite-map("icons/*.png", $spacing: 20px, $layout: horizontal);
+
+$icons-spacing: 20px;
+//@import "compass/utilities/sprites";
+//@import "icons/*.png";
+//@include all-icons-sprites;
+//
+$spacing:               10;
+$img-url:               "../";
+$font-family-body: 'Raleway', sans-serif;
+$font-family-number:'Conv_Mark Simonson - Proxima Nova Regular',Sans-Serif;
+
+/* color-text */
+$color-h:           #60BB47;
+$color-p:						#575D6D;
+$color-a:						#47ACD9;
+$color-a-hover:		  #60BB47;
+$color-line:				#ccc;
+$color-green:       #60BB47;
+
+/* color div */
+$color-huge:					#47ACD9;// mau xanh top 
+$color-main:					#fff;// color-wrapper
+$color-primary:				#1e212a;// mau footer
+$color-success:				#a4a4a4;// color-border-hearder xam
+$color-info:					#f18300;// mau vang
+$color-warning:				#f0ad4e;
+$color-danger:				#b8b8b8;//text-footer
+$color-border-site:		#bdbdbd;
+
+
+$color-red:						#b3272d;
+$color-la:						#8bc052;
+$color-greend:				#3baeda;
+$color-222:						#bdbdbd;
+$color-white:					#fff;
+
+$font-size-base:				14px;
+$line-height-base:        		1.428571429; // 20/14
+$line-height-computed:    		floor(($font-size-base * $line-height-base)); // ~20px
+$icon-font-path: 				"../fonts/";
+
+@media (min-width:768px){
+    .container{max-width:760px}
+}
+@media (min-width:980px){
+    .container{max-width:970px}
+}
+@media (min-width:1200px){
+    .container{max-width:1190px}
+}
+@media (max-width:1199px){
+    .container{max-width:98%}
+}
+body{
+  overflow-x:hidden;
+  font-family:$font-family-body;
+  color:$color-p;
+  font-size:18px;
+  min-width:320px;
+  background:url(#{$img-url}images/body.jpg ) repeat top left;
+  font-weight:400;
+}

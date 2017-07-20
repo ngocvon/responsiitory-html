@@ -1,0 +1,442 @@
+.container {
+    width: 1180px !important;
+}
+
+/* line 5, ../sass/ie8.scss */
+.col-style, .col-xs-3, .col-xs-9, .col-xs-4, .col-xs-8, .col-xs-2, .col-xs-10, .col-xs-1, .col-xs-11, .col-xs-5, .col-xs-7, .col-xs-6, .col-sm-3, .col-sm-9, .col-sm-4, .col-sm-8, .col-sm-2, .col-sm-10, .col-sm-1, .col-sm-11, .col-sm-5, .col-sm-7, .col-sm-6, .col-sm-12, .col-md-3, .col-md-9, .col-md-4, .col-md-8, .col-md-2, .col-md-10, .col-md-11, .col-md-5, .col-md-7, .col-md-6, .col-lg-3, .col-lg-9, .col-lg-4, .col-lg-8, .col-lg-2, .col-lg-10, .col-lg-1, .col-lg-11, .col-lg-5, .col-lg-7, .col-lg-6 {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 11, ../sass/ie8.scss */
+.col-xs-3 {
+  width: 25%;
+}
+
+/* line 15, ../sass/ie8.scss */
+.col-xs-9 {
+  width: 74%;
+}
+
+/* line 19, ../sass/ie8.scss */
+.col-xs-4 {
+  width: 33%;
+}
+
+/* line 23, ../sass/ie8.scss */
+.col-xs-8 {
+  width: 66%;
+}
+
+/* line 27, ../sass/ie8.scss */
+.col-xs-2 {
+  width: 16%;
+}
+
+/* line 31, ../sass/ie8.scss */
+.col-xs-10 {
+  width: 83%;
+}
+
+/* line 35, ../sass/ie8.scss */
+.col-xs-1 {
+  width: 8%;
+}
+
+/* line 39, ../sass/ie8.scss */
+.col-xs-11 {
+  width: 91%;
+}
+
+/* line 43, ../sass/ie8.scss */
+.col-xs-5 {
+  width: 41%;
+}
+
+/* line 47, ../sass/ie8.scss */
+.col-xs-7 {
+  width: 58%;
+}
+
+/* line 51, ../sass/ie8.scss */
+.col-xs-6 {
+  width: 49.5%;
+}
+
+/* line 55, ../sass/ie8.scss */
+.col-sm-3 {
+  width: 25%;
+}
+
+/* line 59, ../sass/ie8.scss */
+.col-sm-9 {
+  width: 74%;
+}
+
+/* line 63, ../sass/ie8.scss */
+.col-sm-4 {
+  width: 33%;
+}
+
+/* line 67, ../sass/ie8.scss */
+.col-sm-8 {
+  width: 66%;
+}
+
+/* line 71, ../sass/ie8.scss */
+.col-sm-2 {
+  width: 16%;
+}
+
+/* line 75, ../sass/ie8.scss */
+.col-sm-10 {
+  width: 83%;
+}
+
+/* line 79, ../sass/ie8.scss */
+.col-sm-1 {
+  width: 8%;
+}
+
+/* line 83, ../sass/ie8.scss */
+.col-sm-11 {
+  width: 91%;
+}
+
+/* line 87, ../sass/ie8.scss */
+.col-sm-5 {
+  width: 42%;
+}
+
+/* line 91, ../sass/ie8.scss */
+.col-sm-7 {
+  width: 58%;
+}
+
+/* line 95, ../sass/ie8.scss */
+.col-sm-6 {
+  width: 49.5%;
+}
+
+/* line 99, ../sass/ie8.scss */
+.col-sm-12 {
+  width: 100%;
+}
+
+/* line 103, ../sass/ie8.scss */
+.col-md-3 {
+  width: 25%;
+}
+
+/* line 107, ../sass/ie8.scss */
+.col-md-9 {
+  width: 74%;
+}
+
+/* line 111, ../sass/ie8.scss */
+.col-md-4 {
+  width: 33%;
+}
+
+/* line 115, ../sass/ie8.scss */
+.col-md-8 {
+  width: 66%;
+}
+
+/* line 119, ../sass/ie8.scss */
+.col-md-2 {
+  width: 16%;
+}
+
+/* line 123, ../sass/ie8.scss */
+.col-md-10 {
+  width: 83%;
+}
+
+/* line 127, ../sass/ie8.scss */
+.col-md-11 {
+  width: 8%;
+}
+
+/* line 131, ../sass/ie8.scss */
+.col-md-11 {
+  width: 91%;
+}
+
+/* line 135, ../sass/ie8.scss */
+.col-md-5 {
+  width: 41%;
+}
+
+/* line 139, ../sass/ie8.scss */
+.col-md-7 {
+  width: 58%;
+}
+
+/* line 143, ../sass/ie8.scss */
+.col-md-6 {
+  width: 49.5%;
+}
+
+/* line 147, ../sass/ie8.scss */
+.col-lg-3 {
+  width: 25%;
+}
+
+/* line 151, ../sass/ie8.scss */
+.col-lg-9 {
+  width: 74%;
+}
+
+/* line 155, ../sass/ie8.scss */
+.col-lg-4 {
+  width: 33%;
+}
+
+/* line 159, ../sass/ie8.scss */
+.col-lg-8 {
+  width: 66%;
+}
+
+/* line 163, ../sass/ie8.scss */
+.col-lg-2 {
+  width: 16%;
+}
+
+/* line 167, ../sass/ie8.scss */
+.col-lg-10 {
+  width: 83%;
+}
+
+/* line 171, ../sass/ie8.scss */
+.col-lg-1 {
+  width: 8%;
+}
+
+/* line 175, ../sass/ie8.scss */
+.col-lg-11 {
+  width: 91%;
+}
+
+/* line 179, ../sass/ie8.scss */
+.col-lg-5 {
+  width: 41%;
+}
+
+/* line 183, ../sass/ie8.scss */
+.col-lg-7 {
+  width: 58%;
+}
+
+/* line 187, ../sass/ie8.scss */
+.col-lg-6 {
+  width: 49.5%;
+}
+
+/* line 191, ../sass/ie8.scss */
+.col-lg-3 {
+  width: 25%;
+}
+
+/* line 195, ../sass/ie8.scss */
+.col-lg-9 {
+  width: 74%;
+}
+
+/* line 199, ../sass/ie8.scss */
+.col-lg-4 {
+  width: 33%;
+}
+
+/* line 203, ../sass/ie8.scss */
+.col-lg-8 {
+  width: 66%;
+}
+
+/* line 207, ../sass/ie8.scss */
+.col-lg-2 {
+  width: 16%;
+}
+
+/* line 211, ../sass/ie8.scss */
+.col-lg-10 {
+  width: 83%;
+}
+
+/* line 215, ../sass/ie8.scss */
+.col-lg-1 {
+  width: 8%;
+}
+
+/* line 219, ../sass/ie8.scss */
+.col-lg-11 {
+  width: 91%;
+}
+
+/* line 223, ../sass/ie8.scss */
+.col-lg-5 {
+  width: 41%;
+}
+
+/* line 227, ../sass/ie8.scss */
+.col-lg-7 {
+  width: 58%;
+}
+
+/* line 231, ../sass/ie8.scss */
+.col-lg-6 {
+  width: 49.5%;
+}
+
+/* line 235, ../sass/ie8.scss */
+.col-sm-offset-11 {
+  margin-left: 91.66667%;
+}
+
+/* line 238, ../sass/ie8.scss */
+.col-sm-offset-10 {
+  margin-left: 83.33333%;
+}
+
+/* line 241, ../sass/ie8.scss */
+.col-sm-offset-9 {
+  margin-left: 75%;
+}
+
+/* line 244, ../sass/ie8.scss */
+.col-sm-offset-8 {
+  margin-left: 66.66667%;
+}
+
+/* line 247, ../sass/ie8.scss */
+.col-sm-offset-7 {
+  margin-left: 58.33333%;
+}
+
+/* line 250, ../sass/ie8.scss */
+.col-sm-offset-6 {
+  margin-left: 50%;
+}
+
+/* line 253, ../sass/ie8.scss */
+.col-sm-offset-5 {
+  margin-left: 41.66667%;
+}
+
+/* line 256, ../sass/ie8.scss */
+.col-sm-offset-4 {
+  margin-left: 33.33333%;
+}
+
+/* line 259, ../sass/ie8.scss */
+.col-sm-offset-3 {
+  margin-left: 25%;
+}
+
+/* line 262, ../sass/ie8.scss */
+.col-sm-offset-2 {
+  margin-left: 16.66667%;
+}
+
+/* line 265, ../sass/ie8.scss */
+.col-sm-offset-1 {
+  margin-left: 8.33333%;
+}
+
+/* line 269, ../sass/ie8.scss */
+.navbar-nav > li {
+  float: left;
+}
+
+/* line 273, ../sass/ie8.scss */
+.nav-justified > li {
+  display: table-cell;
+  width: 1%;
+}
+
+/* line 277, ../sass/ie8.scss */
+.col-sm-offset-1 {
+  margin-left: 8.33333%;
+}
+
+/* line 281, ../sass/ie8.scss */
+sup {
+  font-size: 65%;
+}
+
+/* line 287, ../sass/ie8.scss */
+.modal-dialog {
+  margin: 30px auto;
+  width: 600px;
+}
+
+/* line 292, ../sass/ie8.scss */
+.selecter .selecter-selected:after {
+  top: 9px;
+}
+
+/* line 295, ../sass/ie8.scss */
+.addthis-animated p {
+  position: relative;
+}
+
+/* line 298, ../sass/ie8.scss */
+.addthis-animated p:hover {
+  right: 5px;
+}
+
+.tap-product .panel{
+  border:1px solid #ccc;
+}
+
+.menu-top-links > li > a{
+	padding-left:2.2em;
+	padding-right:2.2em;
+}
+
+#header .login .icon-login{
+	margin-right:30px;
+}
+.sub-navigation.visible-lg.visible-md{
+	display:block !important;
+}
+.navbar-menu{
+	height:46px;
+}
+.add-pin .navigation{
+	padding-bottom:8px;
+}
+.add-pin  .hover-site-nav-dropdown{
+	top:115%;
+}
+.menu-top-links{
+	display:block;
+}
+.navbar-form  .search-only .form-control {
+    padding-left: 40px;
+}
+#header .login ul{
+	margin-top:-1px;
+}
+.product-view .selecter .selecter-selected:after{
+	margin-top:5px;
+}
+.selecter .selecter-selected:after {
+    border-top: 4px solid #444b53;
+}
+
+#user_lic{
+  height: 36px;
+  margin-right: 10px;
+  line-height: 36px;
+  padding:0px 7px;
+}
+.breadcrumbs .breadcrumb > li + li:before{
+color: #ccc;
+    content: "";
+    padding: 0;
+}
+.col-button-footer {
+	width:100%;
+}

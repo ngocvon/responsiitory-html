@@ -1,0 +1,162 @@
+.menu-mobile{
+	
+	padding-top:7px;
+	height:58px;
+	background:$color-huge;	
+	ul li{
+		width: 100%;
+		margin:0 auto;
+	}
+	ul li{
+		float: left;
+		width:20%;
+		
+		a{
+			color: #fff;
+			font-size: 11px;
+			text-transform: none;
+			font-weight: normal;
+			text-align:center;
+			position:relative;
+			display:block;
+			text-transform:uppercase;
+			&:hover{
+				color:$color-a-hover;
+				span.number{
+					color:#fff;
+				}
+			}
+		}
+		
+		span.number{
+			right: 18px;
+			top:-9px;
+			position:relative;
+			font-size: 12px;
+			line-height: 10px;
+			background:$color-info;
+			width:auto;
+			height:auto;
+		}
+		.badge{
+			padding:5px;
+		}
+		span{
+			background:url(#{$img-url}images/iconMobile.png);
+			display: inline-block;
+			height:27px;
+			position: relative;
+			top: 7px;
+			width: 33px;
+		}
+
+	}
+	
+	span.icon-menu-m{
+	
+		background-position:0px 0px;
+	   &:hover{
+	   	background-position:0px -29px;
+	   }
+	   &.active{
+	   	background-position:0px -29px;
+	   }
+	}
+	span.icon-contact-m{
+		
+		width: 28px;
+		background-position:-33px 0px;
+	   &:hover{
+	   	background-position:-33px -29px;
+	   }
+	   &.active{
+	   	background-position:-33px -29px;
+	   }
+	}
+	span.icon-share-m{
+		
+		width: 25px;
+		background-position:-65px 0px;
+	   &:hover{
+	   	background-position:-65px -29px;
+	   }
+	   &.active{
+	   	background-position:-65px -29px;
+	   }
+	}
+	span.icon-cart-m{
+	   width: 31px;
+		background-position:-119px 0px;
+	   &:hover{
+	   	background-position:-119px -29px;
+	   }
+	   &.active{
+	   	background-position:-119px -29px;
+	   }
+	}
+	span.icon-myaccount-m{
+		width: 25px;
+		background-position:-92px 0px;
+	   &:hover{
+	   	background-position:-92px -29px;
+	   }
+	   &.acitve{
+	   	background-position:-92px -29px;
+	   }
+	}
+
+	.dropdown-menu{
+
+		width:100%;
+		background:#fff;
+		li {
+			border-bottom:1px solid #ccc;
+			a{
+				width:100%;
+				color: #000;
+				font-weight: normal;
+				padding-left: 15px;
+				padding-right: 15px;
+				text-transform: uppercase;
+				text-align:left;
+				font-size:14px;
+				line-height: 20px;
+				padding-bottom: 10px;
+				padding-top: 10px;
+				float:none;
+				&:hover{
+					padding-left: 25px;
+					background:#000 !important;
+					color:#fff !important;
+				}
+			}
+
+			
+			&:active{
+				a{
+					background:#000 !important;
+					color:#fff !important;
+				}
+			}
+		}
+	}
+
+	.fa{
+		font-size:40px;
+		line-height:40px;
+	}	
+}
+
+@media screen and(max-width:420px){
+	.menu-mobile 
+	{
+		ul li a .badge {
+    		padding: 4px;
+		}
+	}
+	.menu-mobile ul li a span.number{
+		font-size: 14px;
+		line-height: 14px;
+	}
+	
+}

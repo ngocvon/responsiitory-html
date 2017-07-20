@@ -1,0 +1,47 @@
+﻿
+// Tính năng responsive
+$container-width: 				null;	// Giới hạn chiều rộng và tắt responsive
+$container-maxwidth: 			980px;	// Giới hạn chiều rộng vẫn giữ responsive
+$container-padding: 			0;
+
+// Sprite images
+//$icons: sprite-map("icons/*.png", $spacing: 20px, $layout: horizontal);
+
+$icons-spacing: 20px;
+//@import "compass/utilities/sprites";
+//@import "icons/*.png";
+//@include all-icons-sprites;
+//
+$spacing:               10;
+$img-url:               "../";
+
+$font-family-body:  'Open Sans', sans-serif;
+
+// Biến chung cho các trang trang
+/* LAYOUT */
+$color-h:                       #fff;
+$color-p:						#fff;
+$color-a:						#fff;
+$color-a-hover:					#8bc052;
+$color-primary:					#414141;
+$color-main:					#4b4b4b;
+
+
+$color-red:						#b3272d;
+$color-la:						#8bc052;
+$color-greend:					#3baeda;
+$color-222:						#222;
+$color-white:					#fff;
+
+
+$icon-font-path: 				"../fonts/";
+$brand-primary:					#428bca;
+$brand-success:					#5cb85c;
+$brand-info:					#5bc0de;
+$brand-warning:					#f0ad4e;
+$brand-danger:					#d9534f;
+$body-bg:						#ffffff;
+$link-color:					#cfb17b;
+$font-size-base:				14px;
+$line-height-base:        		1.428571429; // 20/14
+$line-height-computed:    		floor(($font-size-base * $line-height-base)); // ~20px
